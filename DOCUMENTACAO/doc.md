@@ -96,7 +96,7 @@ Este documento descreve o **modelo conceitual** do banco de dados, detalhando as
 
 ### ✅ Resumo das Tabelas Atuais
 
-| Nº  | Tabela           | Função Principal                                          |
+| N  | Tabela           | Função Principal                                          |
 | :-- | :--------------- | :-------------------------------------------------------- |
 | 1   | **USUÁRIO** | Operadores do sistema                                     |
 | 2   | **REGIÃO** | Localização administrativa dos eventos                    |
