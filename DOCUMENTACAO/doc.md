@@ -46,7 +46,6 @@ Este documento descreve o **modelo conceitual** do banco de dados, detalhando as
 * `regiao_id`: FK para a tabela REGIÃO
 * `tipo_ocorrencia`: exemplo: “Temperatura Elevada”, “Fumaça”
 * `nivel_severidade`: Leve, Moderado, Crítico
-* `fonte_deteccao`: ex: “IA/YOLO”, “Manual”
 * `data_ocorrencia`: data/hora da detecção
 * `descricao`: texto livre explicando a ocorrência
 
