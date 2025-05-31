@@ -1,5 +1,4 @@
 -- ARYA_USUARIO
--- Inserts de exemplo para a tabela ARYA_USUARIO
 INSERT INTO ARYA_USUARIO (id_usuario, nome, email, senha, data_nasc) VALUES ('USR001', 'Ana Beatriz Costa', 'ana.costa@email.com', 'senhaABC', TO_DATE('1985-03-22', 'YYYY-MM-DD'));
 INSERT INTO ARYA_USUARIO (id_usuario, nome, email, senha, data_nasc) VALUES ('USR002', 'Carlos Alberto Dias', 'carlos.dias@email.com', 'senhaCAR', TO_DATE('1992-07-10', 'YYYY-MM-DD'));
 INSERT INTO ARYA_USUARIO (id_usuario, nome, email, senha, data_nasc) VALUES ('USR003', 'Fernanda Lima e Silva', 'fernanda.lima@email.com', 'senhaFER', TO_DATE('1988-11-05', 'YYYY-MM-DD'));
@@ -47,3 +46,5 @@ INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, d
 INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, data_ocorrencia, descricao, id_usuario, id_endereco, id_area_operacao) VALUES ('OCO003', 'Onda de Calor Extremo', 3, TO_TIMESTAMP('2025-03-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'Temperaturas elevadas persistentes acima de 40°C, risco à saúde pública e aumento de focos de incêndio.', 'USR003', 'END003', 'AREA003');
 INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, data_ocorrencia, descricao, id_usuario, id_endereco, id_area_operacao) VALUES ('OCO004', 'Deslizamento de Terra', 5, TO_TIMESTAMP('2025-04-05 17:45:00', 'YYYY-MM-DD HH24:MI:SS'), 'Deslocamento de grande volume de terra em encosta próxima a área habitada, risco de soterramento.', 'USR001', 'END005', 'AREA005');
 INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, data_ocorrencia, descricao, id_usuario, id_endereco, id_area_operacao) VALUES ('OCO005', 'Vendaval Destrutivo', 4, TO_TIMESTAMP('2025-05-29 23:10:00', 'YYYY-MM-DD HH24:MI:SS'), 'Ventos com velocidade superior a 90km/h causando destelhamentos e queda de árvores.', 'USR004', 'END004', NULL); -- id_area_operacao NULO se a ocorrência for muito generalizada ou não mapeada a uma área específica.
+
+
