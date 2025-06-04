@@ -1,0 +1,1 @@
+remover a tabela de especificacoes, tabela de drone - modificada (id_hub, modelo(string), alcanceKM(INT), cargaKg(INT)), Tabela nova "Missao Drone" ( Id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status (String))
