@@ -15,6 +15,7 @@ BEGIN
     END LOOP;
     CLOSE c_drones_manutencao;
 END;
+/
 
 -- Ocorrências com severidade alta
 DECLARE
@@ -33,45 +34,48 @@ BEGIN
     END LOOP;
     CLOSE c_ocorrencias_severas;
 END;
+/
 
 -- Ativar drones com hubs ativos
-DECLARE
-    CURSOR c_drones_inativos IS
-        SELECT d.id_drone FROM ARYA_DRONE d
-        JOIN ARYA_HUB_OPERACIONAL h ON d.id_hub = h.id_hub
-        WHERE LOWER(d.status) = 'inativo' AND LOWER(h.status) = 'ativo';
 BEGIN
-    FOR r IN c_drones_inativos LOOP
+    FOR r IN (
+        SELECT d.id_drone
+        FROM ARYA_DRONE d
+        JOIN ARYA_HUB_OPERACIONAL h ON d.id_hub = h.id_hub
+        WHERE LOWER(d.status) = 'inativo' AND LOWER(h.status) = 'ativo'
+    ) LOOP
         UPDATE ARYA_DRONE SET status = 'ativo' WHERE id_drone = r.id_drone;
         DBMS_OUTPUT.PUT_LINE('Drone ativado: ' || r.id_drone);
     END LOOP;
     COMMIT;
 END;
+/
 
 -- Relatório de usuários com quantidade de ocorrências
-DECLARE
-    CURSOR c_usuario_ocorrencias IS
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('--- RELATÓRIO USUÁRIOS x OCORRÊNCIAS ---');
+    FOR r IN (
         SELECT u.id_usuario, u.nome, COUNT(o.id_ocorrencia) AS total
         FROM ARYA_USUARIO u
         LEFT JOIN ARYA_OCORRENCIA o ON u.id_usuario = o.id_usuario
-        GROUP BY u.id_usuario, u.nome;
-BEGIN
-    DBMS_OUTPUT.PUT_LINE('--- RELATÓRIO USUÁRIOS x OCORRÊNCIAS ---');
-    FOR r IN c_usuario_ocorrencias LOOP
+        GROUP BY u.id_usuario, u.nome
+    ) LOOP
         DBMS_OUTPUT.PUT_LINE('Usuário: ' || r.nome || ' | Total Ocorrências: ' || r.total);
     END LOOP;
 END;
+/
 
 -- Detectar hubs sem drones
-DECLARE
-    CURSOR c_hubs_sem_drones IS
-        SELECT h.id_hub, h.nome FROM ARYA_HUB_OPERACIONAL h
-        WHERE NOT EXISTS (
-            SELECT 1 FROM ARYA_DRONE d WHERE d.id_hub = h.id_hub
-        );
 BEGIN
     DBMS_OUTPUT.PUT_LINE('--- HUBs SEM DRONES ASSOCIADOS ---');
-    FOR r IN c_hubs_sem_drones LOOP
+    FOR r IN (
+        SELECT h.id_hub, h.nome
+        FROM ARYA_HUB_OPERACIONAL h
+        WHERE NOT EXISTS (
+            SELECT 1 FROM ARYA_DRONE d WHERE d.id_hub = h.id_hub
+        )
+    ) LOOP
         DBMS_OUTPUT.PUT_LINE('Hub: ' || r.nome || ' (' || r.id_hub || ')');
     END LOOP;
 END;
+/
