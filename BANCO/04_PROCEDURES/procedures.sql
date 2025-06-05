@@ -35,42 +35,6 @@ BEGIN
     DELETE FROM ARYA_USUARIO WHERE id_usuario = p_id_usuario;
 END;
 
--- PROCEDURES: ARYA_ESPECIFICACAO
-
-CREATE OR REPLACE PROCEDURE inserir_arya_especificacao (
-    p_id_especificacao IN VARCHAR2,
-    p_fabricante       IN VARCHAR2,
-    p_autonomia        IN NUMBER,
-    p_tipo_drone       IN VARCHAR2,
-    p_modelo           IN VARCHAR2
-) AS
-BEGIN
-    INSERT INTO ARYA_ESPECIFICACAO (id_especificacao, fabricante, autonomia_minutos, tipo_drone, modelo)
-    VALUES (p_id_especificacao, p_fabricante, p_autonomia, p_tipo_drone, p_modelo);
-END;
-
-CREATE OR REPLACE PROCEDURE  update_arya_especificacao (
-    p_id_especificacao IN VARCHAR2,
-    p_fabricante       IN VARCHAR2,
-    p_autonomia        IN NUMBER,
-    p_tipo_drone       IN VARCHAR2,
-    p_modelo           IN VARCHAR2
-) AS
-BEGIN
-    UPDATE ARYA_ESPECIFICACAO
-    SET fabricante = p_fabricante,
-        autonomia_minutos = p_autonomia,
-        tipo_drone = p_tipo_drone,
-        modelo = p_modelo
-    WHERE id_especificacao = p_id_especificacao;
-END;
-
-CREATE OR REPLACE PROCEDURE delete_arya_especificacao (
-    p_id_especificacao IN VARCHAR2
-) AS
-BEGIN
-    DELETE FROM ARYA_ESPECIFICACAO WHERE id_especificacao = p_id_especificacao;
-END;
 
 -- PROCEDURES: ARYA_ENDERECO
 
@@ -194,24 +158,29 @@ CREATE OR REPLACE PROCEDURE insert_arya_drone (
     p_id_hub IN VARCHAR2,
     p_nome IN VARCHAR2,
     p_status IN VARCHAR2,
-    p_id_especificacao IN VARCHAR2,
+    p_modelo IN VARCHAR2,
+    p_alcanceKM IN NUMBER,
+    p_cargaKg IN NUMBER,
     p_carregamento IN VARCHAR2
 )
 IS
 BEGIN
     INSERT INTO ARYA_DRONE (
-        id_drone, id_hub, nome, status, id_especificacao, carregamento
+        id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento
     ) VALUES (
-        p_id_drone, p_id_hub, p_nome, p_status, p_id_especificacao, p_carregamento
+        p_id_drone, p_id_hub, p_nome, p_status, p_modelo, p_alcanceKM, p_cargaKg, p_carregamento
     );
 END;
+/
 
 CREATE OR REPLACE PROCEDURE update_arya_drone (
     p_id_drone IN VARCHAR2,
     p_id_hub IN VARCHAR2,
     p_nome IN VARCHAR2,
     p_status IN VARCHAR2,
-    p_id_especificacao IN VARCHAR2,
+    p_modelo IN VARCHAR2,
+    p_alcanceKM IN NUMBER,
+    p_cargaKg IN NUMBER,
     p_carregamento IN VARCHAR2
 )
 IS
@@ -220,10 +189,13 @@ BEGIN
     SET id_hub = p_id_hub,
         nome = p_nome,
         status = p_status,
-        id_especificacao = p_id_especificacao,
+        modelo = p_modelo,
+        alcanceKM = p_alcanceKM,
+        cargaKg = p_cargaKg,
         carregamento = p_carregamento
     WHERE id_drone = p_id_drone;
 END;
+/
 
 CREATE OR REPLACE PROCEDURE delete_arya_drone (
     p_id_drone IN VARCHAR2
@@ -233,6 +205,7 @@ BEGIN
     DELETE FROM ARYA_DRONE
     WHERE id_drone = p_id_drone;
 END;
+
 
 -- PROCEDURES: ARYA_OCORRENCIA
 
@@ -285,4 +258,51 @@ IS
 BEGIN
     DELETE FROM ARYA_OCORRENCIA
     WHERE id_ocorrencia = p_id_ocorrencia;
+END;
+
+CREATE OR REPLACE PROCEDURE insert_arya_missao_drone (
+    p_id_missao IN VARCHAR2,
+    p_id_drone IN VARCHAR2,
+    p_id_ocorrencia IN VARCHAR2,
+    p_dataInicio IN TIMESTAMP,
+    p_dataFim IN TIMESTAMP,
+    p_status IN VARCHAR2
+)
+IS
+BEGIN
+    INSERT INTO ARYA_MISSAO_DRONE (
+        id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status
+    ) VALUES (
+        p_id_missao, p_id_drone, p_id_ocorrencia, p_dataInicio, p_dataFim, p_status
+    );
+END;
+
+
+CREATE OR REPLACE PROCEDURE update_arya_missao_drone (
+    p_id_missao IN VARCHAR2,
+    p_id_drone IN VARCHAR2,
+    p_id_ocorrencia IN VARCHAR2,
+    p_dataInicio IN TIMESTAMP,
+    p_dataFim IN TIMESTAMP,
+    p_status IN VARCHAR2
+)
+IS
+BEGIN
+    UPDATE ARYA_MISSAO_DRONE
+    SET id_drone = p_id_drone,
+        id_ocorrencia = p_id_ocorrencia,
+        dataInicio = p_dataInicio,
+        dataFim = p_dataFim,
+        status = p_status
+    WHERE id_missao = p_id_missao;
+END;
+
+
+CREATE OR REPLACE PROCEDURE delete_arya_missao_drone (
+    p_id_missao IN VARCHAR2
+)
+IS
+BEGIN
+    DELETE FROM ARYA_MISSAO_DRONE
+    WHERE id_missao = p_id_missao;
 END;
