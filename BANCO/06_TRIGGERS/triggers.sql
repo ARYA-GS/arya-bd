@@ -14,20 +14,6 @@ BEGIN
     END IF;
 END;
 
-CREATE OR REPLACE TRIGGER arya_especificacao_validacao
-BEFORE INSERT OR UPDATE ON ARYA_ESPECIFICACAO
-FOR EACH ROW
-BEGIN
-    IF :NEW.autonomia_minutos IS NOT NULL AND :NEW.autonomia_minutos <= 0 THEN
-        RAISE_APPLICATION_ERROR(-20003, 'Autonomia deve ser maior que zero.');
-    END IF;
-    IF :NEW.fabricante IS NULL OR TRIM(:NEW.fabricante) = '' THEN
-        RAISE_APPLICATION_ERROR(-20004, 'Fabricante é obrigatório.');
-    END IF;
-    IF :NEW.tipo_drone IS NULL OR TRIM(:NEW.tipo_drone) = '' THEN
-        RAISE_APPLICATION_ERROR(-20005, 'Tipo de drone é obrigatório.');
-    END IF;
-END;
 
 CREATE OR REPLACE TRIGGER arya_endereco_validacao
 BEFORE INSERT OR UPDATE ON ARYA_ENDERECO
@@ -66,28 +52,48 @@ CREATE OR REPLACE TRIGGER arya_drone_validacao
 BEFORE INSERT OR UPDATE ON ARYA_DRONE
 FOR EACH ROW
 BEGIN
+    -- Nome obrigatório
     IF :NEW.nome IS NULL OR TRIM(:NEW.nome) = '' THEN
         RAISE_APPLICATION_ERROR(-20011, 'Nome do drone é obrigatório.');
     END IF;
 
+    -- Status válido
     IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('ativo', 'inativo', 'em voo', 'manutencao') THEN
         RAISE_APPLICATION_ERROR(-20012, 'Status inválido para Drone.');
     END IF;
+
+    -- Modelo obrigatório
+    IF :NEW.modelo IS NULL OR TRIM(:NEW.modelo) = '' THEN
+        RAISE_APPLICATION_ERROR(-20016, 'Modelo do drone é obrigatório.');
+    END IF;
+
+    -- AlcanceKM deve ser maior que zero
+    IF :NEW.alcanceKM IS NULL OR :NEW.alcanceKM <= 0 THEN
+        RAISE_APPLICATION_ERROR(-20017, 'Alcance (KM) deve ser maior que zero.');
+    END IF;
+
+    -- cargaKg deve ser maior ou igual a zero (pode ser zero)
+    IF :NEW.cargaKg IS NULL OR :NEW.cargaKg < 0 THEN
+        RAISE_APPLICATION_ERROR(-20018, 'Carga (Kg) não pode ser negativa.');
+    END IF;
 END;
 
-CREATE OR REPLACE TRIGGER arya_ocorrencia_validacao
-BEFORE INSERT OR UPDATE ON ARYA_OCORRENCIA
+CREATE OR REPLACE TRIGGER arya_missao_drone_validacao
+BEFORE INSERT OR UPDATE ON ARYA_MISSAO_DRONE
 FOR EACH ROW
 BEGIN
-    IF :NEW.nivel_severidade < 1 OR :NEW.nivel_severidade > 10 THEN
-        RAISE_APPLICATION_ERROR(-20013, 'Nível de severidade deve estar entre 1 e 10.');
+    -- Data início não pode ser nula
+    IF :NEW.dataInicio IS NULL THEN
+        RAISE_APPLICATION_ERROR(-20019, 'Data de início da missão é obrigatória.');
     END IF;
 
-    IF :NEW.data_ocorrencia > SYSTIMESTAMP THEN
-        RAISE_APPLICATION_ERROR(-20014, 'Data de ocorrência não pode ser no futuro.');
+    -- Data fim não pode ser anterior à data início (se informada)
+    IF :NEW.dataFim IS NOT NULL AND :NEW.dataFim < :NEW.dataInicio THEN
+        RAISE_APPLICATION_ERROR(-20020, 'Data de fim da missão não pode ser anterior à data de início.');
     END IF;
 
-    IF LOWER(:NEW.tipo_ocorrencia) NOT IN ('falha', 'acidente', 'manutencao', 'outros') THEN
-        RAISE_APPLICATION_ERROR(-20015, 'Tipo de ocorrência inválido.');
+    -- Status válido
+    IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('ativa', 'finalizada', 'cancelada') THEN
+        RAISE_APPLICATION_ERROR(-20021, 'Status inválido para Missão do drone.');
     END IF;
 END;
