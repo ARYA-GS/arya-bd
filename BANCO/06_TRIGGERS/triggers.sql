@@ -93,7 +93,7 @@ BEGIN
     END IF;
 
     -- Status válido
-    IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('ativa', 'finalizada', 'cancelada') THEN
-        RAISE_APPLICATION_ERROR(-20021, 'Status inválido para Missão do drone.');
-    END IF;
+    IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('concluída', 'em andamento', 'cancelada') THEN
+     RAISE_APPLICATION_ERROR(-20021, 'Status inválido para Missão do drone.');
+END IF;
 END;
