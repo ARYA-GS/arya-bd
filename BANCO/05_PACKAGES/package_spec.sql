@@ -6,168 +6,163 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
     --------------------------------------------------------------------------------
     -- PROCEDURES: ARYA_USUARIO
     --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_usuario (
-        p_id_usuario    IN ARYA_USUARIO.id_usuario%TYPE,
-        p_nome          IN ARYA_USUARIO.nome%TYPE,
-        p_email         IN ARYA_USUARIO.email%TYPE,
-        p_senha         IN ARYA_USUARIO.senha%TYPE,
-        p_data_nasc     IN ARYA_USUARIO.data_nasc%TYPE
+-- PROCEDURES: ARYA_USUARIO
+    PROCEDURE insert_arya_usuario (
+        p_id_usuario    IN VARCHAR2,
+        p_nome          IN VARCHAR2,
+        p_email         IN VARCHAR2,
+        p_senha         IN VARCHAR2,
+        p_data_nasc     IN DATE
     );
 
-    PROCEDURE prc_update_arya_usuario (
-        p_id_usuario    IN ARYA_USUARIO.id_usuario%TYPE,
-        p_nome          IN ARYA_USUARIO.nome%TYPE,
-        p_email         IN ARYA_USUARIO.email%TYPE,
-        p_senha         IN ARYA_USUARIO.senha%TYPE,
-        p_data_nasc     IN ARYA_USUARIO.data_nasc%TYPE
+    PROCEDURE update_arya_usuario (
+        p_id_usuario    IN VARCHAR2,
+        p_nome          IN VARCHAR2,
+        p_email         IN VARCHAR2,
+        p_senha         IN VARCHAR2,
+        p_data_nasc     IN DATE
     );
 
-    PROCEDURE prc_delete_arya_usuario (
-        p_id_usuario IN ARYA_USUARIO.id_usuario%TYPE
+    PROCEDURE delete_arya_usuario (
+        p_id_usuario IN VARCHAR2
     );
 
-    --------------------------------------------------------------------------------
-    -- PROCEDURES: ARYA_ESPECIFICACAO
-    --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_especificacao (
-        p_id_especificacao IN ARYA_ESPECIFICACAO.id_especificacao%TYPE,
-        p_fabricante       IN ARYA_ESPECIFICACAO.fabricante%TYPE,
-        p_autonomia        IN ARYA_ESPECIFICACAO.autonomia_minutos%TYPE,
-        p_tipo_drone       IN ARYA_ESPECIFICACAO.tipo_drone%TYPE,
-        p_modelo           IN ARYA_ESPECIFICACAO.modelo%TYPE
-    );
-
-    PROCEDURE prc_update_arya_especificacao (
-        p_id_especificacao IN ARYA_ESPECIFICACAO.id_especificacao%TYPE,
-        p_fabricante       IN ARYA_ESPECIFICACAO.fabricante%TYPE,
-        p_autonomia        IN ARYA_ESPECIFICACAO.autonomia_minutos%TYPE,
-        p_tipo_drone       IN ARYA_ESPECIFICACAO.tipo_drone%TYPE,
-        p_modelo           IN ARYA_ESPECIFICACAO.modelo%TYPE
-    );
-
-    PROCEDURE prc_delete_arya_especificacao (
-        p_id_especificacao IN ARYA_ESPECIFICACAO.id_especificacao%TYPE
-    );
-
-    --------------------------------------------------------------------------------
     -- PROCEDURES: ARYA_ENDERECO
-    --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_endereco (
-        p_id_endereco IN ARYA_ENDERECO.id_endereco%TYPE,
-        p_bairro      IN ARYA_ENDERECO.bairro%TYPE,
-        p_cidade      IN ARYA_ENDERECO.cidade%TYPE,
-        p_estado      IN ARYA_ENDERECO.estado%TYPE,
-        p_pais        IN ARYA_ENDERECO.pais%TYPE,
-        p_latitude    IN ARYA_ENDERECO.latitude%TYPE,
-        p_longitude   IN ARYA_ENDERECO.longitude%TYPE
+    PROCEDURE insert_arya_endereco (
+        p_id_endereco IN VARCHAR2,
+        p_bairro      IN VARCHAR2,
+        p_cidade      IN VARCHAR2,
+        p_estado      IN VARCHAR2,
+        p_pais        IN VARCHAR2,
+        p_latitude    IN NUMBER,
+        p_longitude   IN NUMBER
     );
 
-    PROCEDURE prc_update_arya_endereco (
-        p_id_endereco IN ARYA_ENDERECO.id_endereco%TYPE,
-        p_bairro      IN ARYA_ENDERECO.bairro%TYPE,
-        p_cidade      IN ARYA_ENDERECO.cidade%TYPE,
-        p_estado      IN ARYA_ENDERECO.estado%TYPE,
-        p_pais        IN ARYA_ENDERECO.pais%TYPE,
-        p_latitude    IN ARYA_ENDERECO.latitude%TYPE,
-        p_longitude   IN ARYA_ENDERECO.longitude%TYPE
+    PROCEDURE update_arya_endereco (
+        p_id_endereco IN VARCHAR2,
+        p_bairro      IN VARCHAR2,
+        p_cidade      IN VARCHAR2,
+        p_estado      IN VARCHAR2,
+        p_pais        IN VARCHAR2,
+        p_latitude    IN NUMBER,
+        p_longitude   IN NUMBER
     );
 
-    PROCEDURE prc_delete_arya_endereco (
-        p_id_endereco IN ARYA_ENDERECO.id_endereco%TYPE
+    PROCEDURE delete_arya_endereco (
+        p_id_endereco IN VARCHAR2
     );
 
-    --------------------------------------------------------------------------------
     -- PROCEDURES: ARYA_AREA_OPERACAO
-    --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_area_operacao (
-        p_id_area_operacao  IN ARYA_AREA_OPERACAO.id_area_operacao%TYPE,
-        p_latitude_central  IN ARYA_AREA_OPERACAO.latitude_central%TYPE,
-        p_longitude_central IN ARYA_AREA_OPERACAO.longitude_central%TYPE
+    PROCEDURE insert_arya_area_operacao (
+        p_id_area_operacao IN VARCHAR2,
+        p_latitude_central IN NUMBER,
+        p_longitude_central IN NUMBER
     );
 
-    PROCEDURE prc_update_arya_area_operacao (
-        p_id_area_operacao  IN ARYA_AREA_OPERACAO.id_area_operacao%TYPE,
-        p_latitude_central  IN ARYA_AREA_OPERACAO.latitude_central%TYPE,
-        p_longitude_central IN ARYA_AREA_OPERACAO.longitude_central%TYPE
+    PROCEDURE update_arya_area_operacao (
+        p_id_area_operacao IN VARCHAR2,
+        p_latitude_central IN NUMBER,
+        p_longitude_central IN NUMBER
     );
 
-    PROCEDURE prc_delete_arya_area_operacao (
-        p_id_area_operacao IN ARYA_AREA_OPERACAO.id_area_operacao%TYPE
+    PROCEDURE delete_arya_area_operacao (
+        p_id_area_operacao IN VARCHAR2
     );
 
-    --------------------------------------------------------------------------------
     -- PROCEDURES: ARYA_HUB_OPERACIONAL
-    --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_hub_operacional (
-        p_id_hub      IN ARYA_HUB_OPERACIONAL.id_hub%TYPE,
-        p_nome        IN ARYA_HUB_OPERACIONAL.nome%TYPE,
-        p_status      IN ARYA_HUB_OPERACIONAL.status%TYPE,
-        p_id_endereco IN ARYA_HUB_OPERACIONAL.id_endereco%TYPE
+    PROCEDURE insert_arya_hub_operacional (
+        p_id_hub IN VARCHAR2,
+        p_nome IN VARCHAR2,
+        p_status IN VARCHAR2,
+        p_id_endereco IN VARCHAR2
     );
 
-    PROCEDURE prc_update_arya_hub_operacional (
-        p_id_hub      IN ARYA_HUB_OPERACIONAL.id_hub%TYPE,
-        p_nome        IN ARYA_HUB_OPERACIONAL.nome%TYPE,
-        p_status      IN ARYA_HUB_OPERACIONAL.status%TYPE,
-        p_id_endereco IN ARYA_HUB_OPERACIONAL.id_endereco%TYPE
+    PROCEDURE update_arya_hub_operacional (
+        p_id_hub IN VARCHAR2,
+        p_nome IN VARCHAR2,
+        p_status IN VARCHAR2,
+        p_id_endereco IN VARCHAR2
     );
 
-    PROCEDURE prc_delete_arya_hub_operacional (
-        p_id_hub IN ARYA_HUB_OPERACIONAL.id_hub%TYPE
+    PROCEDURE delete_arya_hub_operacional (
+        p_id_hub IN VARCHAR2
     );
 
-    --------------------------------------------------------------------------------
     -- PROCEDURES: ARYA_DRONE
-    --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_drone (
-        p_id_drone         IN ARYA_DRONE.id_drone%TYPE,
-        p_id_hub           IN ARYA_DRONE.id_hub%TYPE,
-        p_nome             IN ARYA_DRONE.nome%TYPE,
-        p_status           IN ARYA_DRONE.status%TYPE,
-        p_id_especificacao IN ARYA_DRONE.id_especificacao%TYPE,
-        p_carregamento     IN ARYA_DRONE.carregamento%TYPE
+    PROCEDURE insert_arya_drone (
+        p_id_drone IN VARCHAR2,
+        p_id_hub IN VARCHAR2,
+        p_nome IN VARCHAR2,
+        p_status IN VARCHAR2,
+        p_modelo IN VARCHAR2,
+        p_alcanceKM IN NUMBER,
+        p_cargaKg IN NUMBER,
+        p_carregamento IN VARCHAR2
     );
 
-    PROCEDURE prc_update_arya_drone (
-        p_id_drone         IN ARYA_DRONE.id_drone%TYPE,
-        p_id_hub           IN ARYA_DRONE.id_hub%TYPE,
-        p_nome             IN ARYA_DRONE.nome%TYPE,
-        p_status           IN ARYA_DRONE.status%TYPE,
-        p_id_especificacao IN ARYA_DRONE.id_especificacao%TYPE,
-        p_carregamento     IN ARYA_DRONE.carregamento%TYPE
+    PROCEDURE update_arya_drone (
+        p_id_drone IN VARCHAR2,
+        p_id_hub IN VARCHAR2,
+        p_nome IN VARCHAR2,
+        p_status IN VARCHAR2,
+        p_modelo IN VARCHAR2,
+        p_alcanceKM IN NUMBER,
+        p_cargaKg IN NUMBER,
+        p_carregamento IN VARCHAR2
     );
 
-    PROCEDURE prc_delete_arya_drone (
-        p_id_drone IN ARYA_DRONE.id_drone%TYPE
+    PROCEDURE delete_arya_drone (
+        p_id_drone IN VARCHAR2
     );
 
-    --------------------------------------------------------------------------------
     -- PROCEDURES: ARYA_OCORRENCIA
-    --------------------------------------------------------------------------------
-    PROCEDURE prc_insert_arya_ocorrencia (
-        p_id_ocorrencia    IN ARYA_OCORRENCIA.id_ocorrencia%TYPE,
-        p_tipo_ocorrencia  IN ARYA_OCORRENCIA.tipo_ocorrencia%TYPE,
-        p_nivel_severidade IN ARYA_OCORRENCIA.nivel_severidade%TYPE,
-        p_data_ocorrencia  IN ARYA_OCORRENCIA.data_ocorrencia%TYPE,
-        p_descricao        IN ARYA_OCORRENCIA.descricao%TYPE,
-        p_id_usuario       IN ARYA_OCORRENCIA.id_usuario%TYPE,
-        p_id_endereco      IN ARYA_OCORRENCIA.id_endereco%TYPE,
-        p_id_area_operacao IN ARYA_OCORRENCIA.id_area_operacao%TYPE
+    PROCEDURE insert_arya_ocorrencia (
+        p_id_ocorrencia IN VARCHAR2,
+        p_tipo_ocorrencia IN VARCHAR2,
+        p_nivel_severidade IN NUMBER,
+        p_data_ocorrencia IN TIMESTAMP,
+        p_descricao IN CLOB,
+        p_id_usuario IN VARCHAR2,
+        p_id_endereco IN VARCHAR2,
+        p_id_area_operacao IN VARCHAR2
     );
 
-    PROCEDURE prc_update_arya_ocorrencia (
-        p_id_ocorrencia    IN ARYA_OCORRENCIA.id_ocorrencia%TYPE,
-        p_tipo_ocorrencia  IN ARYA_OCORRENCIA.tipo_ocorrencia%TYPE,
-        p_nivel_severidade IN ARYA_OCORRENCIA.nivel_severidade%TYPE,
-        p_data_ocorrencia  IN ARYA_OCORRENCIA.data_ocorrencia%TYPE,
-        p_descricao        IN ARYA_OCORRENCIA.descricao%TYPE,
-        p_id_usuario       IN ARYA_OCORRENCIA.id_usuario%TYPE,
-        p_id_endereco      IN ARYA_OCORRENCIA.id_endereco%TYPE,
-        p_id_area_operacao IN ARYA_OCORRENCIA.id_area_operacao%TYPE
+    PROCEDURE update_arya_ocorrencia (
+        p_id_ocorrencia       IN VARCHAR2,
+        p_tipo_ocorrencia     IN VARCHAR2,
+        p_nivel_severidade    IN NUMBER,
+        p_data_ocorrencia     IN TIMESTAMP,
+        p_descricao           IN CLOB,
+        p_id_usuario          IN VARCHAR2,
+        p_id_endereco         IN VARCHAR2,
+        p_id_area_operacao    IN VARCHAR2
     );
 
-    PROCEDURE prc_delete_arya_ocorrencia (
-        p_id_ocorrencia IN ARYA_OCORRENCIA.id_ocorrencia%TYPE
+    PROCEDURE delete_arya_ocorrencia (
+        p_id_ocorrencia IN VARCHAR2
+    );
+
+    -- PROCEDURES: ARYA_MISSAO_DRONE
+    PROCEDURE insert_arya_missao_drone (
+        p_id_missao IN VARCHAR2,
+        p_id_drone IN VARCHAR2,
+        p_id_ocorrencia IN VARCHAR2,
+        p_dataInicio IN TIMESTAMP,
+        p_dataFim IN TIMESTAMP,
+        p_status IN VARCHAR2
+    );
+
+    PROCEDURE update_arya_missao_drone (
+        p_id_missao IN VARCHAR2,
+        p_id_drone IN VARCHAR2,
+        p_id_ocorrencia IN VARCHAR2,
+        p_dataInicio IN TIMESTAMP,
+        p_dataFim IN TIMESTAMP,
+        p_status IN VARCHAR2
+    );
+
+    PROCEDURE delete_arya_missao_drone (
+        p_id_missao IN VARCHAR2
     );
 
     --------------------------------------------------------------------------------
@@ -217,4 +212,3 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
         RETURN SYS_REFCURSOR;
 
 END pkg_arya_management;
-/
