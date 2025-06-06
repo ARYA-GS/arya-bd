@@ -63,18 +63,8 @@ CREATE TABLE ARYA_OCORRENCIA (
     CONSTRAINT pk_arya_ocorrencia PRIMARY KEY (id_ocorrencia)
 );
 
--- 7. ARYA_OUTPUT_MODELO
-CREATE TABLE ARYA_OUTPUT_MODELO (
-    id_output VARCHAR2(50) NOT NULL,
-    nome_modelo_ml VARCHAR2(150),
-    data_geracao TIMESTAMP DEFAULT SYSTIMESTAMP NOT NULL,
-    id_endereco VARCHAR2(50),
-    status_processamento VARCHAR2(50),
-    resultado CLOB,
-    CONSTRAINT pk_arya_output_modelo PRIMARY KEY (id_output)
-);
 
--- 8. ARYA_MISSAO_DRONE (nova tabela)
+-- 7. ARYA_MISSAO_DRONE (nova tabela)
 CREATE TABLE ARYA_MISSAO_DRONE (
     id_missao VARCHAR2(50) NOT NULL,
     id_drone VARCHAR2(50) NOT NULL,
