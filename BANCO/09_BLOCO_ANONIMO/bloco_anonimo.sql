@@ -1,7 +1,7 @@
 -- 1. Verificar se um drone pode ser ativado
 DECLARE
-    v_id_drone ARYA_DRONE.id_drone%TYPE := 'DRN001';
-    v_status ARYA_DRONE.status%TYPE;
+    v_id_drone   ARYA_DRONE.id_drone%TYPE := 'DRN001';
+    v_status     ARYA_DRONE.status%TYPE;
     v_hub_status ARYA_HUB_OPERACIONAL.status%TYPE;
 BEGIN
     SELECT d.status, h.status INTO v_status, v_hub_status
@@ -12,9 +12,14 @@ BEGIN
     IF LOWER(v_status) = 'inativo' AND LOWER(v_hub_status) = 'ativo' THEN
         UPDATE ARYA_DRONE SET status = 'ativo' WHERE id_drone = v_id_drone;
         DBMS_OUTPUT.PUT_LINE('Drone ativado com sucesso!');
+        COMMIT; -- Adicionado COMMIT para salvar a alteração
     ELSE
         DBMS_OUTPUT.PUT_LINE('Drone não pode ser ativado. Verifique status ou hub.');
     END IF;
+
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('Erro: Drone com ID ' || v_id_drone || ' não encontrado.');
 END;
 
 -- 2. Classificar nível de severidade
@@ -37,8 +42,12 @@ DECLARE
     v_total_ativos NUMBER;
     v_total_em_voo NUMBER;
 BEGIN
-    SELECT COUNT(*) INTO v_total_ativos FROM ARYA_DRONE WHERE LOWER(status) = 'ativo';
-    SELECT COUNT(*) INTO v_total_em_voo FROM ARYA_DRONE WHERE LOWER(status) = 'em voo';
+    -- CORREÇÃO: Usando uma única consulta para mais eficiência.
+    SELECT
+        SUM(CASE WHEN LOWER(status) = 'ativo'  THEN 1 ELSE 0 END),
+        SUM(CASE WHEN LOWER(status) = 'em voo' THEN 1 ELSE 0 END)
+    INTO v_total_ativos, v_total_em_voo
+    FROM ARYA_DRONE;
 
     DBMS_OUTPUT.PUT_LINE('Drones ativos: ' || v_total_ativos);
     IF v_total_em_voo = 0 THEN
@@ -66,11 +75,15 @@ END;
 
 -- 5. Loop com CONTINUE e EXIT
 DECLARE
+    -- CORREÇÃO: A consulta do cursor foi reescrita com JOIN para melhor performance.
     CURSOR c_usuarios IS
-        SELECT u.id_usuario, u.nome,
-            (SELECT COUNT(*) FROM ARYA_OCORRENCIA o WHERE o.id_usuario = u.id_usuario) AS total_ocorrencias
-        FROM ARYA_USUARIO u;
-
+        SELECT
+            u.id_usuario,
+            u.nome,
+            COUNT(o.id_ocorrencia) AS total_ocorrencias
+        FROM ARYA_USUARIO u
+        LEFT JOIN ARYA_OCORRENCIA o ON u.id_usuario = o.id_usuario
+        GROUP BY u.id_usuario, u.nome;
 BEGIN
     FOR r IN c_usuarios LOOP
         IF r.total_ocorrencias = 0 THEN
