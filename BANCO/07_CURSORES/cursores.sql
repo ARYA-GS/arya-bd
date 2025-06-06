@@ -1,41 +1,35 @@
 -- Listar Drones em Manutenção
+-- Listar Drones em Manutenção
 DECLARE
+    -- A declaração do cursor continua a mesma
     CURSOR c_drones_manutencao IS
         SELECT id_drone, nome, status FROM ARYA_DRONE WHERE LOWER(status) = 'manutencao';
-    v_id ARYA_DRONE.id_drone%TYPE;
-    v_nome ARYA_DRONE.nome%TYPE;
-    v_status ARYA_DRONE.status%TYPE;
 BEGIN
     DBMS_OUTPUT.PUT_LINE('--- DRONES EM MANUTENÇÃO ---');
-    OPEN c_drones_manutencao;
-    LOOP
-        FETCH c_drones_manutencao INTO v_id, v_nome, v_status;
-        EXIT WHEN c_drones_manutencao%NOTFOUND;
-        DBMS_OUTPUT.PUT_LINE('ID: ' || v_id || ' | Nome: ' || v_nome || ' | Status: ' || v_status);
+    
+    -- CORREÇÃO: Usando um FOR LOOP para simplificar o código
+    FOR rec IN c_drones_manutencao LOOP
+        DBMS_OUTPUT.PUT_LINE('ID: ' || rec.id_drone || ' | Nome: ' || rec.nome || ' | Status: ' || rec.status);
     END LOOP;
-    CLOSE c_drones_manutencao;
+    -- Não é mais necessário declarar variáveis, nem usar OPEN, FETCH, EXIT WHEN ou CLOSE.
 END;
-/
+
 
 -- Ocorrências com severidade alta
 DECLARE
     CURSOR c_ocorrencias_severas IS
         SELECT id_ocorrencia, tipo_ocorrencia, nivel_severidade FROM ARYA_OCORRENCIA WHERE nivel_severidade > 7;
-    v_id ARYA_OCORRENCIA.id_ocorrencia%TYPE;
-    v_tipo ARYA_OCORRENCIA.tipo_ocorrencia%TYPE;
-    v_nivel ARYA_OCORRENCIA.nivel_severidade%TYPE;
 BEGIN
     DBMS_OUTPUT.PUT_LINE('--- OCORRÊNCIAS CRÍTICAS ---');
-    OPEN c_ocorrencias_severas;
-    LOOP
-        FETCH c_ocorrencias_severas INTO v_id, v_tipo, v_nivel;
-        EXIT WHEN c_ocorrencias_severas%NOTFOUND;
-        DBMS_OUTPUT.PUT_LINE('ID: ' || v_id || ' | Tipo: ' || v_tipo || ' | Severidade: ' || v_nivel);
+    
+    -- CORREÇÃO: Usando FOR LOOP
+    FOR rec IN c_ocorrencias_severas LOOP
+        DBMS_OUTPUT.PUT_LINE('ID: ' || rec.id_ocorrencia || ' | Tipo: ' || rec.tipo_ocorrencia || ' | Severidade: ' || rec.nivel_severidade);
     END LOOP;
-    CLOSE c_ocorrencias_severas;
 END;
-/
 
+
+-- Ativar drones com hubs ativos
 -- Ativar drones com hubs ativos
 BEGIN
     FOR r IN (
@@ -47,9 +41,8 @@ BEGIN
         UPDATE ARYA_DRONE SET status = 'ativo' WHERE id_drone = r.id_drone;
         DBMS_OUTPUT.PUT_LINE('Drone ativado: ' || r.id_drone);
     END LOOP;
-    COMMIT;
-END;
-/
+
+
 
 -- Relatório de usuários com quantidade de ocorrências
 BEGIN
