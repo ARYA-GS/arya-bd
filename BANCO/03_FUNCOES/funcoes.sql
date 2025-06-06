@@ -24,14 +24,12 @@ BEGIN
     INTO v_total
     FROM ARYA_OCORRENCIA o
     JOIN ARYA_AREA_OPERACAO ao ON o.id_area_operacao = ao.id_area_operacao
-    JOIN ARYA_HUB_OPERACIONAL h ON h.id_endereco = ao.id_area_operacao -- Ajuste necessário no relacionamento real
+    JOIN ARYA_HUB_OPERACIONAL h ON h.id_endereco = ao.id_endereco -- Substituir pelo relacionamento correto
     WHERE h.id_hub = p_id_hub;
     
-    RETURN NVL(v_total, 0);
-EXCEPTION
-    WHEN NO_DATA_FOUND THEN
-        RETURN 0;
+    RETURN v_total;
 END;
+
 
 -- Calcula um índice numérico de risco baseado no nível de severidade
 CREATE OR REPLACE FUNCTION calcula_risco (
