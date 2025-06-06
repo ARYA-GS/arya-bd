@@ -10,6 +10,9 @@ CREATE OR REPLACE PROCEDURE insert_arya_usuario (
 BEGIN
     INSERT INTO ARYA_USUARIO (id_usuario, nome, email, senha, data_nasc)
     VALUES (p_id_usuario, p_nome, p_email, p_senha, p_data_nasc);
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_usuario: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE update_arya_usuario (
@@ -26,6 +29,9 @@ BEGIN
         senha = p_senha,
         data_nasc = p_data_nasc
     WHERE id_usuario = p_id_usuario;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_usuario: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE delete_arya_usuario (
@@ -33,8 +39,10 @@ CREATE OR REPLACE PROCEDURE delete_arya_usuario (
 ) AS
 BEGIN
     DELETE FROM ARYA_USUARIO WHERE id_usuario = p_id_usuario;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_usuario: ' || SQLERRM);
 END;
-
 
 -- PROCEDURES: ARYA_ENDERECO
 
@@ -50,6 +58,9 @@ CREATE OR REPLACE PROCEDURE insert_arya_endereco (
 BEGIN
     INSERT INTO ARYA_ENDERECO (id_endereco, bairro, cidade, estado, pais, latitude, longitude)
     VALUES (p_id_endereco, p_bairro, p_cidade, p_estado, p_pais, p_latitude, p_longitude);
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_endereco: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE update_arya_endereco (
@@ -70,6 +81,9 @@ BEGIN
         latitude = p_latitude,
         longitude = p_longitude
     WHERE id_endereco = p_id_endereco;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_endereco: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE delete_arya_endereco (
@@ -77,6 +91,9 @@ CREATE OR REPLACE PROCEDURE delete_arya_endereco (
 ) AS
 BEGIN
     DELETE FROM ARYA_ENDERECO WHERE id_endereco = p_id_endereco;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_endereco: ' || SQLERRM);
 END;
 
 -- PROCEDURES: ARYA_AREA_OPERACAO
@@ -89,6 +106,9 @@ CREATE OR REPLACE PROCEDURE insert_arya_area_operacao (
 BEGIN
     INSERT INTO ARYA_AREA_OPERACAO (id_area_operacao, latitude_central, longitude_central)
     VALUES (p_id_area_operacao, p_latitude_central, p_longitude_central);
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_area_operacao: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE update_arya_area_operacao (
@@ -101,6 +121,9 @@ BEGIN
     SET latitude_central = p_latitude_central,
         longitude_central = p_longitude_central
     WHERE id_area_operacao = p_id_area_operacao;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_area_operacao: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE delete_arya_area_operacao (
@@ -108,6 +131,9 @@ CREATE OR REPLACE PROCEDURE delete_arya_area_operacao (
 ) AS
 BEGIN
     DELETE FROM ARYA_AREA_OPERACAO WHERE id_area_operacao = p_id_area_operacao;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_area_operacao: ' || SQLERRM);
 END;
 
 -- PROCEDURES: ARYA_HUB_OPERACIONAL
@@ -125,6 +151,9 @@ BEGIN
     ) VALUES (
         p_id_hub, p_nome, p_status, p_id_endereco
     );
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_hub_operacional: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE update_arya_hub_operacional (
@@ -140,6 +169,9 @@ BEGIN
         status = p_status,
         id_endereco = p_id_endereco
     WHERE id_hub = p_id_hub;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_hub_operacional: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE delete_arya_hub_operacional (
@@ -149,6 +181,9 @@ IS
 BEGIN
     DELETE FROM ARYA_HUB_OPERACIONAL
     WHERE id_hub = p_id_hub;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_hub_operacional: ' || SQLERRM);
 END;
 
 -- PROCEDURES: ARYA_DRONE
@@ -170,8 +205,10 @@ BEGIN
     ) VALUES (
         p_id_drone, p_id_hub, p_nome, p_status, p_modelo, p_alcanceKM, p_cargaKg, p_carregamento
     );
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_drone: ' || SQLERRM);
 END;
-/
 
 CREATE OR REPLACE PROCEDURE update_arya_drone (
     p_id_drone IN VARCHAR2,
@@ -194,8 +231,10 @@ BEGIN
         cargaKg = p_cargaKg,
         carregamento = p_carregamento
     WHERE id_drone = p_id_drone;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_drone: ' || SQLERRM);
 END;
-/
 
 CREATE OR REPLACE PROCEDURE delete_arya_drone (
     p_id_drone IN VARCHAR2
@@ -204,8 +243,10 @@ IS
 BEGIN
     DELETE FROM ARYA_DRONE
     WHERE id_drone = p_id_drone;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_drone: ' || SQLERRM);
 END;
-
 
 -- PROCEDURES: ARYA_OCORRENCIA
 
@@ -226,6 +267,9 @@ BEGIN
     ) VALUES (
         p_id_ocorrencia, p_tipo_ocorrencia, p_nivel_severidade, p_data_ocorrencia, p_descricao, p_id_usuario, p_id_endereco, p_id_area_operacao
     );
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_ocorrencia: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE update_arya_ocorrencia (
@@ -249,6 +293,9 @@ BEGIN
         id_endereco         = p_id_endereco,
         id_area_operacao    = p_id_area_operacao
     WHERE id_ocorrencia = p_id_ocorrencia;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_ocorrencia: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE delete_arya_ocorrencia (
@@ -258,6 +305,9 @@ IS
 BEGIN
     DELETE FROM ARYA_OCORRENCIA
     WHERE id_ocorrencia = p_id_ocorrencia;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_ocorrencia: ' || SQLERRM);
 END;
 
 CREATE OR REPLACE PROCEDURE insert_arya_missao_drone (
@@ -275,8 +325,10 @@ BEGIN
     ) VALUES (
         p_id_missao, p_id_drone, p_id_ocorrencia, p_dataInicio, p_dataFim, p_status
     );
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em insert_arya_missao_drone: ' || SQLERRM);
 END;
-
 
 CREATE OR REPLACE PROCEDURE update_arya_missao_drone (
     p_id_missao IN VARCHAR2,
@@ -295,8 +347,10 @@ BEGIN
         dataFim = p_dataFim,
         status = p_status
     WHERE id_missao = p_id_missao;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em update_arya_missao_drone: ' || SQLERRM);
 END;
-
 
 CREATE OR REPLACE PROCEDURE delete_arya_missao_drone (
     p_id_missao IN VARCHAR2
@@ -305,4 +359,7 @@ IS
 BEGIN
     DELETE FROM ARYA_MISSAO_DRONE
     WHERE id_missao = p_id_missao;
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_missao_drone: ' || SQLERRM);
 END;
