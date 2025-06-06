@@ -27,9 +27,9 @@ INSERT INTO ARYA_HUB_OPERACIONAL (id_hub, nome, status, id_endereco) VALUES ('HU
 INSERT INTO ARYA_HUB_OPERACIONAL (id_hub, nome, status, id_endereco) VALUES ('HUB005', 'Hub Porto Alegre Sul', 'Ativo', 'END005');
 
 -- ARYA_DRONE
-INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN001', 'HUB001', 'Drone Alpha', 'Ativo', 'X-200', 50, 10, 'Carregando bateria'),
-INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN002', 'HUB001', 'Drone Beta', 'Manutenção', 'Y-150', 40, 8, NULL),
-INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN003', 'HUB002', 'Drone Gamma', 'Ativo', 'Z-300', 70, 12, 'Carregando bateria'),
+INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN001', 'HUB001', 'Drone Alpha', 'Ativo', 'X-200', 50, 10, 'Carregando bateria');
+INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN002', 'HUB001', 'Drone Beta', 'Manutenção', 'Y-150', 40, 8, NULL);
+INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN003', 'HUB002', 'Drone Gamma', 'Ativo', 'Z-300', 70, 12, 'Carregando bateria');
 INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN004', NULL, 'Drone Delta', 'Inativo', 'X-100', 30, 6, NULL);
 
 -- ARYA_OCORRENCIA
@@ -40,7 +40,7 @@ INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, d
 INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, data_ocorrencia, descricao, id_usuario, id_endereco, id_area_operacao) VALUES ('OCO005', 'Vendaval Destrutivo', 4, TO_TIMESTAMP('2025-05-29 23:10:00', 'YYYY-MM-DD HH24:MI:SS'), 'Ventos com velocidade superior a 90km/h causando destelhamentos e queda de árvores.', 'USR004', 'END004', NULL); -- id_area_operacao NULO se a ocorrência for muito generalizada ou não mapeada a uma área específica.
 
 -- ARYA_MISSAO_DRONE
-INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN001', 'DRN001', 'OCC001', TO_TIMESTAMP('2025-06-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2025-06-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'Concluída'),
-INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN002', 'DRN002', 'OCC002', TO_TIMESTAMP('2025-06-02 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 'Em andamento'),
-INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN003', 'DRN003', 'OCC003', TO_TIMESTAMP('2025-06-03 07:45:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2025-06-03 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'Concluída');
+INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN001', 'DRN001', 'OCO001', TO_TIMESTAMP('2025-06-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2025-06-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'Concluída');
+INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN002', 'DRN002', 'OCO002', TO_TIMESTAMP('2025-06-02 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 'Em andamento');
+INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN003', 'DRN003', 'OCO003', TO_TIMESTAMP('2025-06-03 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2025-06-03 08:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'Concluída');
 
