@@ -1,7 +1,5 @@
 CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
 
- -- PROCEDURES: ARYA_USUARIO
-
  PROCEDURE insert_arya_usuario (
         p_id_usuario     IN VARCHAR2,
         p_nome           IN VARCHAR2,
@@ -45,8 +43,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
         WHEN OTHERS THEN
             DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_usuario: ' || SQLERRM);
     END;
-
-    -- PROCEDURES: ARYA_ENDERECO
 
      PROCEDURE insert_arya_endereco (
         p_id_endereco IN VARCHAR2,
@@ -98,8 +94,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
             DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_endereco: ' || SQLERRM);
     END;
 
-    -- PROCEDURES: ARYA_AREA_OPERACAO
-
      PROCEDURE insert_arya_area_operacao (
         p_id_area_operacao IN VARCHAR2,
         p_latitude_central IN NUMBER,
@@ -137,8 +131,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
         WHEN OTHERS THEN
             DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_area_operacao: ' || SQLERRM);
     END;
-
-    -- PROCEDURES: ARYA_HUB_OPERACIONAL
 
      PROCEDURE insert_arya_hub_operacional (
         p_id_hub IN VARCHAR2,
@@ -187,8 +179,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
         WHEN OTHERS THEN
             DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_hub_operacional: ' || SQLERRM);
     END;
-
-    -- PROCEDURES: ARYA_DRONE
 
      PROCEDURE insert_arya_drone (
         p_id_drone IN VARCHAR2,
@@ -249,8 +239,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
         WHEN OTHERS THEN
             DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_drone: ' || SQLERRM);
     END;
-
-    -- PROCEDURES: ARYA_OCORRENCIA
 
      PROCEDURE insert_arya_ocorrencia (
         p_id_ocorrencia IN VARCHAR2,
@@ -366,11 +354,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
             DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_missao_drone: ' || SQLERRM);
     END;
 
-    --------------------------------------------------------------------------------
-    -- FUNCTIONS
-    --------------------------------------------------------------------------------
-    -- Retorna a pontuação categorizada da severidade de uma ocorrência
-     FUNCTION pontuacao_severidade (
+     FUNCTION fnc_pontuacao_severidade (
         p_nivel_severidade IN NUMBER
     ) RETURN VARCHAR2 IS
         v_pontuacao VARCHAR2(10);
@@ -383,38 +367,31 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
             v_pontuacao := 'Alto';
         END IF;
         RETURN v_pontuacao;
-    END;
+    END fnc_pontuacao_severidade;
 
-    -- Retorna a quantidade de ocorrências relacionadas a um hub específico
-     FUNCTION ranking_ocorrencias_hub (
-        p_id_hub IN VARCHAR2
+     FUNCTION fnc_ranking_ocorrencias_hub (
+        p_id_hub IN ARYA_HUB_OPERACIONAL.id_hub%TYPE
     ) RETURN NUMBER IS
         v_total NUMBER;
     BEGIN
         SELECT COUNT(o.id_ocorrencia)
         INTO v_total
         FROM ARYA_OCORRENCIA o
-        JOIN ARYA_AREA_OPERACAO ao ON o.id_area_operacao = ao.id_area_operacao
-        JOIN ARYA_HUB_OPERACIONAL h ON h.id_endereco = ao.id_endereco -- Substituir pelo relacionamento correto
+        JOIN ARYA_HUB_OPERACIONAL h ON o.id_endereco = h.id_endereco
         WHERE h.id_hub = p_id_hub;
         
         RETURN v_total;
-    END;
+    END fnc_ranking_ocorrencias_hub;
 
-
-    -- Calcula um índice numérico de risco baseado no nível de severidade
-     FUNCTION calcula_risco (
+     FUNCTION fnc_calcula_risco (
         p_nivel_severidade IN NUMBER
     ) RETURN NUMBER IS
         v_risco NUMBER;
     BEGIN
         v_risco := p_nivel_severidade * 1.5;
         RETURN v_risco;
-    END;
+    END fnc_calcula_risco;
 
-    --------------------------------------------------------------------------------
-    -- PROCEDURES FROM ANONYMOUS BLOCKS
-    --------------------------------------------------------------------------------
     PROCEDURE prc_listar_drones_manutencao AS
         CURSOR c_drones_manutencao IS
             SELECT id_drone, nome, status FROM ARYA_DRONE WHERE LOWER(status) = 'manutencao';
@@ -465,8 +442,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
             UPDATE ARYA_DRONE SET status = 'ativo' WHERE id_drone = r.id_drone;
             DBMS_OUTPUT.PUT_LINE('Drone ativado: ' || r.id_drone);
         END LOOP;
-        COMMIT; -- O COMMIT foi mantido conforme o script original.
-                -- Em muitos cenários, o controle de transação é feito pela aplicação chamadora.
+        COMMIT; 
     EXCEPTION
         WHEN OTHERS THEN
             RAISE;
@@ -504,9 +480,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
             RAISE;
     END prc_listar_hubs_sem_drones;
 
-    --------------------------------------------------------------------------------
-    -- FUNCTIONS FOR REPORTS (returning SYS_REFCURSOR)
-    --------------------------------------------------------------------------------
     FUNCTION fnc_rel_contagem_drones_status
         RETURN SYS_REFCURSOR
     AS

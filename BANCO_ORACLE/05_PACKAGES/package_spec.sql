@@ -1,12 +1,4 @@
 CREATE OR REPLACE PACKAGE pkg_arya_management AS
-
-    -- TYPE para REF CURSOR (pode ser omitido se usar SYS_REFCURSOR diretamente)
-    -- TYPE ref_cursor_type IS REF CURSOR; -- Usaremos SYS_REFCURSOR diretamente
-
-    --------------------------------------------------------------------------------
-    -- PROCEDURES: ARYA_USUARIO
-    --------------------------------------------------------------------------------
--- PROCEDURES: ARYA_USUARIO
     PROCEDURE insert_arya_usuario (
         p_id_usuario    IN VARCHAR2,
         p_nome          IN VARCHAR2,
@@ -26,8 +18,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
     PROCEDURE delete_arya_usuario (
         p_id_usuario IN VARCHAR2
     );
-
-    -- PROCEDURES: ARYA_ENDERECO
     PROCEDURE insert_arya_endereco (
         p_id_endereco IN VARCHAR2,
         p_bairro      IN VARCHAR2,
@@ -51,8 +41,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
     PROCEDURE delete_arya_endereco (
         p_id_endereco IN VARCHAR2
     );
-
-    -- PROCEDURES: ARYA_AREA_OPERACAO
     PROCEDURE insert_arya_area_operacao (
         p_id_area_operacao IN VARCHAR2,
         p_latitude_central IN NUMBER,
@@ -68,8 +56,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
     PROCEDURE delete_arya_area_operacao (
         p_id_area_operacao IN VARCHAR2
     );
-
-    -- PROCEDURES: ARYA_HUB_OPERACIONAL
     PROCEDURE insert_arya_hub_operacional (
         p_id_hub IN VARCHAR2,
         p_nome IN VARCHAR2,
@@ -87,8 +73,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
     PROCEDURE delete_arya_hub_operacional (
         p_id_hub IN VARCHAR2
     );
-
-    -- PROCEDURES: ARYA_DRONE
     PROCEDURE insert_arya_drone (
         p_id_drone IN VARCHAR2,
         p_id_hub IN VARCHAR2,
@@ -114,8 +98,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
     PROCEDURE delete_arya_drone (
         p_id_drone IN VARCHAR2
     );
-
-    -- PROCEDURES: ARYA_OCORRENCIA
     PROCEDURE insert_arya_ocorrencia (
         p_id_ocorrencia IN VARCHAR2,
         p_tipo_ocorrencia IN VARCHAR2,
@@ -142,7 +124,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
         p_id_ocorrencia IN VARCHAR2
     );
 
-    -- PROCEDURES: ARYA_MISSAO_DRONE
     PROCEDURE insert_arya_missao_drone (
         p_id_missao IN VARCHAR2,
         p_id_drone IN VARCHAR2,
@@ -165,9 +146,6 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
         p_id_missao IN VARCHAR2
     );
 
-    --------------------------------------------------------------------------------
-    -- FUNCTIONS
-    --------------------------------------------------------------------------------
     FUNCTION fnc_pontuacao_severidade (
         p_nivel_severidade IN NUMBER
     ) RETURN VARCHAR2;
@@ -180,22 +158,15 @@ CREATE OR REPLACE PACKAGE pkg_arya_management AS
         p_nivel_severidade IN NUMBER
     ) RETURN NUMBER;
 
-    --------------------------------------------------------------------------------
-    -- PROCEDURES FROM ANONYMOUS BLOCKS (for DBMS_OUTPUT listings)
-    --------------------------------------------------------------------------------
     PROCEDURE prc_listar_drones_manutencao;
 
     PROCEDURE prc_listar_ocorrencias_criticas;
 
-    PROCEDURE prc_ativar_drones_hubs_ativos; -- Contains COMMIT
+    PROCEDURE prc_ativar_drones_hubs_ativos; 
 
-    PROCEDURE prc_rel_usuarios_ocorren_out; -- Renamed for clarity
-
+    PROCEDURE prc_rel_usuarios_ocorren_out; 
     PROCEDURE prc_listar_hubs_sem_drones;
 
-    --------------------------------------------------------------------------------
-    -- FUNCTIONS FOR REPORTS (returning SYS_REFCURSOR)
-    --------------------------------------------------------------------------------
     FUNCTION fnc_rel_contagem_drones_status
         RETURN SYS_REFCURSOR;
 

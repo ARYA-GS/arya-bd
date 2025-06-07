@@ -23,8 +23,7 @@ BEGIN
     SELECT COUNT(o.id_ocorrencia)
     INTO v_total
     FROM ARYA_OCORRENCIA o
-    JOIN ARYA_AREA_OPERACAO ao ON o.id_area_operacao = ao.id_area_operacao
-    JOIN ARYA_HUB_OPERACIONAL h ON h.id_endereco = ao.id_endereco -- Substituir pelo relacionamento correto
+    JOIN ARYA_HUB_OPERACIONAL h ON o.id_endereco = h.id_endereco
     WHERE h.id_hub = p_id_hub;
     
     RETURN v_total;
