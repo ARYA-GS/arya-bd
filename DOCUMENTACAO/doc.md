@@ -1,12 +1,21 @@
-# Arya-BD: Sistema de Gerenciamento de Operações com Drones
+# **Projeto Arya: Sistema de Monitoramento de Desastres Naturais**
 
-Este repositório contém o código-fonte do banco de dados para o **Projeto Arya**, um sistema robusto para gerenciamento, monitoramento e operação de uma frota de drones. O sistema foi projetado para registrar ocorrências (como desastres ambientais ou urbanos), alocar drones para missões de monitoramento e gerar relatórios analíticos.
+Este repositório contém o código-fonte completo do **Projeto Arya**, um sistema de informação geográfica projetado para registrar, monitorar e analisar desastres naturais. A plataforma combina uma interface de mapa interativa com um backend robusto e uma arquitetura de banco de dados híbrida para fornecer insights e auxiliar na gestão de riscos.
 
-Toda a estrutura foi desenvolvida utilizando **Oracle SQL e PL/SQL**, seguindo boas práticas de normalização, segurança e modularidade.
+## 🏗️ Arquitetura do Sistema
 
-## 🏗️ Arquitetura do Banco de Dados
+O sistema Arya é construído sobre uma arquitetura moderna de três camadas, compreendendo uma interface de usuário, um servidor de aplicação e uma camada de persistência de dados híbrida.
 
-O banco de dados é composto por tabelas normalizadas, views, procedures, functions, triggers e packages que, juntas, formam a espinha dorsal do sistema Arya.
+
+1.  **Servidor de Aplicação (Backend):** Uma API RESTful construída com **Flask (Python)**. É responsável por:
+    * Servir a aplicação frontend.
+    * Processar requisições HTTP.
+    * Orquestrar a comunicação entre os bancos de dados Oracle e MongoDB.
+    * Fornecer os endpoints de dados para a interface.
+
+2.  **Banco de Dados Híbrido (Persistência):** Para otimizar o desempenho e a flexibilidade, o projeto utiliza dois tipos de bancos de dados:
+    * **Oracle (Relacional):** Armazena os dados estruturados, cadastrais e transacionais com alta integridade.
+    * **MongoDB (Não Relacional):** Armazena documentos para a criação dos modelos Machine Learning em JSON, ideal para dados semiestruturados como relatórios detalhados e logs de eventos.
 
 ### 📜 Modelo Entidade-Relacionamento (MER)
 
@@ -23,14 +32,14 @@ O esquema do banco de dados é centrado em algumas entidades principais:
 
 A seguir, uma descrição detalhada das tabelas criadas no script `tabelas.sql`:
 
-| Tabela | Descrição |
-| :--- | :--- |
-| **ARYA_USUARIO** | Armazena os dados dos usuários que interagem com o sistema. |
-| **ARYA_ENDERECO** | Tabela centralizada para armazenar informações de endereço com coordenadas geográficas. |
-| **ARYA_AREA_OPERACAO**| Define as áreas geográficas onde os drones podem operar. |
-| **ARYA_HUB_OPERACIONAL**| Armazena os hubs (centros de operação) dos drones, incluindo seu status (ativo, inativo, etc.). |
-| **ARYA_DRONE** | Cadastro dos drones, contendo modelo, status, capacidade de carga, autonomia e a qual hub pertence. |
-| **ARYA_OCORRENCIA** | Registro de todos os eventos, com tipo, nível de severidade, descrição e localização. |
+| Tabela                 | Descrição                                                                                             |
+| :--------------------- | :---------------------------------------------------------------------------------------------------- |
+| **ARYA_USUARIO** | Armazena os dados dos usuários que interagem com o sistema.                                           |
+| **ARYA_ENDERECO** | Tabela centralizada para armazenar informações de endereço com coordenadas geográficas.               |
+| **ARYA_AREA_OPERACAO** | Define as áreas geográficas onde os drones podem operar.                                              |
+| **ARYA_HUB_OPERACIONAL**| Armazena os hubs (centros de operação) dos drones, incluindo seu status (ativo, inativo, etc.).        |
+| **ARYA_DRONE** | Cadastro dos drones, contendo modelo, status, capacidade de carga, autonomia e a qual hub pertence.   |
+| **ARYA_OCORRENCIA** | Registro de todos os eventos, com tipo, nível de severidade, descrição e localização.                 |
 | **ARYA_MISSAO_DRONE** | Tabela de associação que vincula um drone a uma ocorrência, registrando o início, o fim e o status da missão. |
 
 ## ⚙️ Objetos do Banco de Dados
@@ -76,18 +85,47 @@ O `pkg_arya_management` é o principal componente de lógica de negócio do banc
     * `prc_listar_drones_manutencao`: Lista drones que estão em manutenção.
     * `prc_listar_hubs_sem_drones`: Identifica hubs que não possuem drones associados.
 
+## ⚙️ Componentes do Backend (Oracle PL/SQL)
+
+A lógica de negócio robusta é implementada diretamente no banco de dados Oracle para garantir performance e integridade.
+
+### 1. Funções (`funcoes.sql`)
+
+* **`FNC_CALCULAR_RISCO`**: Função principal do sistema que recebe o ID de uma ocorrência e calcula seu nível de risco com base em múltiplos fatores, como tipo de solo, declividade, dados meteorológicos e proximidade da água.
+
+### 2. Procedures (`procedures.sql`)
+
+* Procedures para realizar operações de DML (Inserir, Atualizar, Deletar) de forma segura e controlada nas tabelas do sistema.
+
+### 3. Triggers (`triggers.sql`)
+
+* Gatilhos que automatizam ações, como a `TRG_LOG_OCORRENCIA`, que insere um registro na tabela `tbl_log` sempre que uma ocorrência é criada ou atualizada.
+
+### 4. Packages (`package.sql`, `package_body.sql`)
+
+* **`PG_RELATORIOS`**: Um pacote que agrupa toda a lógica de geração de relatórios. Ele contém procedures que utilizam `SYS_REFCURSOR` para retornar conjuntos de dados complexos, como relatórios consolidados de ocorrências por região e nível de risco.
+
+## 🗄️ Collections (MongoDB)
+
+O MongoDB é usado para dados que exigem um esquema flexível.
+
+| Collection | Descrição |
+| :--- | :--- |
+| **desastres_naturais** | Armazena documentos detalhados de cada desastre, podendo incluir dados variados e aninhados. |
+| **relatorios_desastres**| Guarda o conteúdo completo dos relatórios gerados, em formato JSON. |
+
+
 ## 🔗 Links Úteis
 
 * [Link do GitHub](https://github.com/ARYA-GS/arya-bd)
 * [Link do Youtube](https://#)
 
-
 ---
 
 ## 👥 Integrantes
 
-| Nome | RM | 
-| :--- | :--- | 
-| José Neto | 553844
-| Vitor Cruz | 553621
-| Keven Ike | 553215
+| Nome | RM |
+| :--- | :--- |
+| José Neto | 553844 |
+| Vitor Cruz | 553621 |
+| Keven Ike | 553215 |
