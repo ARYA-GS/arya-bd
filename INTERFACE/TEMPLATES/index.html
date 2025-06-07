@@ -1,24 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CRUD MongoDB</title>
-</head>
-<body>
-    <h2>Selecione a Collection e a Operação</h2>
-    <form method="POST">
-        <label>Collection:</label>
-        <select name="collection">
-            <option value="desastres_naturais">Desastres Naturais</option>
-            <option value="relatorios_desastres">Relatórios de Desastres</option>
-        </select><br><br>
+{% extends 'base.html' %}
 
-        <label>Ação:</label>
-        <select name="action">
-            <option value="criar">Criar</option>
-            <option value="listar">Listar</option>
-        </select><br><br>
+{% block title %}Dashboard ARYA{% endblock %}
 
-        <button type="submit">Ir</button>
-    </form>
-</body>
-</html>
+{% block content %}
+<div class="page-wrapper">
+    <!-- ===== BARRA LATERAL (SIDEBAR) ===== -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="arya-logo">ARYA</h1>
+            <h2 class="sidebar-subtitle">Data Manager</h2>
+        </div>
+        <nav class="collection-nav">
+            <ul id="collection-list">
+                {% for collection in collections %}
+                    <li><a href="#" data-collection="{{ collection }}"><i class="bi bi-folder2-open"></i> {{ collection }}</a></li>
+                {% else %}
+                    <li><i class="bi bi-x-circle"></i> Nenhuma collection.</li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Projeto ARYA &copy; 2024</p>
+        </div>
+    </aside>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main class="main-content">
+        <div class="container-fluid">
+            <!-- Cabeçalho da Área de Conteúdo -->
+            <div class="main-header">
+                <h2 id="current-collection-title">Painel de Controle</h2>
+                <div class="header-actions">
+                    <button id="export-btn" class="btn-secondary-custom" disabled>
+                        <i class="bi bi-download"></i> Exportar JSON
+                    </button>
+                    <button id="add-new-btn" class="btn-gradient" disabled>
+                        <i class="bi bi-plus-circle"></i> Adicionar Documento
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Painel de Ações (Busca) -->
+            <div id="action-panel" class="card-glass d-none">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" id="search-input" class="form-control" placeholder="Buscar em todos os campos...">
+                </div>
+            </div>
+
+            <!-- Área de Exibição dos Dados -->
+            <div id="data-display-wrapper" class="card-glass">
+                <div id="initial-message" class="text-center placeholder-message">
+                    <img src="https://www.gstatic.com/images/branding/product/2x/apps_script_64dp.png" alt="ARYA Logo" class="welcome-logo">
+                    <h3>Bem-vindo ao Painel ARYA</h3>
+                    <p>Selecione uma collection no menu à esquerda para começar a gerenciar seus dados.</p>
+                </div>
+                <div id="loading-spinner" class="text-center placeholder-message d-none">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p>Carregando dados...</p>
+                </div>
+                <div class="table-responsive">
+                     <table class="table d-none">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- TEMPLATES DE MODAIS (permanecem no index.html que herda do base) -->
+<template id="modal-template">
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Formulário</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="data-form" class="row g-3"></form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-secondary-custom" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn-gradient" id="save-btn">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="confirm-modal-template">
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h5 id="confirmModalTitle">Você tem certeza?</h5>
+                    <p id="confirmModalBody" class="text-white-50">Essa ação não pode ser desfeita.</p>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn-secondary-custom" id="confirm-cancel-btn">Cancelar</button>
+                    <button type="button" class="btn-danger-custom" id="confirm-ok-btn">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+{% endblock %}
