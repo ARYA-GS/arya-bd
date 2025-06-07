@@ -1,6 +1,47 @@
 // static/js/script.js
 
 document.addEventListener('DOMContentLoaded', () => {
+    // ############### NOVIDADE AQUI: Placeholders baseados nos seus dados ###############
+    const PLACEHOLDERS = {
+        // --- Coleção: relatorios_desastres ---
+        idRelatorio: "Ex: 1 (numérico)",
+        dataHora: "Será preenchido automaticamente",
+        tipoFonte: "Ex: Equipe de Campo",
+        tipoObservacao: "Ex: Incêndio",
+        nivelGravidade: "Ex: Média",
+        qtdAtingidos: "Ex: 156",
+        danoInfraestrutura: "Ex: Leve",
+        acessibilidade: "Ex: Difícil",
+        notasAdicionais: "Ex: Incêndio em vegetação próximo a área urbana.",
+        classificacaoRisco: "Ex: Suporte Necessário",
+
+        // --- Coleção: desastres_naturais ---
+        id_zona: "Ex: Z_0001_NOR",
+        data: "Será preenchido automaticamente",
+        precipitacao_mm: "Ex: 48.6",
+        temperatura_c: "Ex: 34.9",
+        umidade_percentual: "Ex: 25.4",
+        densidade_populacional: "Ex: 241.1",
+        altitude_metros: "Ex: 197.9",
+        declividade_graus: "Ex: 29.9",
+        distancia_agua_km: "Ex: 4.4",
+        tipo_de_solo: "Ex: argiloso_seco",
+        uso_do_solo: "Ex: rural",
+        nivel_acessibilidade: "Ex: baixa",
+        frequencia_sismos: "Ex: 0",
+        tipo_evento: "Ex: seca",
+        ocorrenca: "Ex: 0 (não) ou 1 (sim)",
+        nivel_de_risco: "Ex: BAIXO",
+        mes: "Ex: 9",
+        estacao_do_ano: "Ex: primavera",
+        regiao: "Ex: Nordeste_Sertao",
+
+        // --- Campos Comuns (auto-preenchidos) ---
+        latitude: "Será preenchido automaticamente",
+        longitude: "Será preenchido automaticamente",
+    };
+    // ##################################################################################
+
     // --- Seletores de Elementos ---
     const profileSelector = document.getElementById('profile-selector');
     const collectionSelector = document.getElementById('collection-selector');
@@ -164,15 +205,18 @@ document.addEventListener('DOMContentLoaded', () => {
             label.setAttribute('for', `field-${header}`);
             label.textContent = header;
             
-            const inputType = header.toLowerCase().includes('desc') || String(doc?.[header]).length > 100 ? 'textarea' : 'input';
+            const inputType = header.toLowerCase().includes('desc') || header.toLowerCase().includes('notas') ? 'textarea' : 'input';
             const input = document.createElement(inputType);
-            if (inputType === 'textarea') input.rows = 3;
+            if (inputType === 'textarea') input.rows = 4;
             
             input.id = `field-${header}`;
             input.name = header;
             input.value = doc ? (doc[header] || '') : '';
             input.readOnly = !isEditable;
 
+            // Adiciona o placeholder com base no dicionário
+            input.placeholder = PLACEHOLDERS[header] || `Insira o valor para ${header}`;
+            
             group.appendChild(label);
             group.appendChild(input);
             formFields.appendChild(group);
@@ -181,29 +225,38 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.classList.remove('hidden');
 
         if (isNewDoc) {
-            // ############### CORREÇÃO APLICADA AQUI ###############
-            // Atrasamos a execução para garantir que o DOM esteja pronto
-            setTimeout(autoFillFields, 0);
-            // ########################################################
+            autoFillFields();
         }
     };
     
+    function gerarDataHoraAtual() {
+        const agora = new Date();
+        const ano = agora.getFullYear();
+        const mes = String(agora.getMonth() + 1).padStart(2, '0');
+        const dia = String(agora.getDate()).padStart(2, '0');
+        const hora = String(agora.getHours()).padStart(2, '0');
+        const minuto = String(agora.getMinutes()).padStart(2, '0');
+        const segundo = String(agora.getSeconds()).padStart(2, '0');
+        return `${ano}-${mes}-${dia} ${hora}:${minuto}:${segundo}`;
+    }
+
     const autoFillFields = () => {
-        const now = new Date();
+        const dataHoraFormatada = gerarDataHoraAtual();
+        // ############### NOVIDADE AQUI: Nomes de campo de data corretos ###############
+        const possibleDateFields = ['data', 'dataHora'];
+        // #############################################################################
 
-        const padTo2Digits = (num) => String(num).padStart(2, '0');
-
-        const formattedDateTime =
-            `${now.getFullYear()}-${padTo2Digits(now.getMonth() + 1)}-${padTo2Digits(now.getDate())}` +
-            ` ${padTo2Digits(now.getHours())}:${padTo2Digits(now.getMinutes())}:${padTo2Digits(now.getSeconds())}`;
-
-        const dateTimeInput = document.getElementById('field-data');
-        if (dateTimeInput) {
-            dateTimeInput.value = formattedDateTime;
+        for (const fieldName of possibleDateFields) {
+            const dateInput = form.elements[fieldName];
+            if (dateInput) {
+                dateInput.value = dataHoraFormatada;
+                break; 
+            }
         }
 
-        const latInput = document.getElementById('field-latitude');
-        const lonInput = document.getElementById('field-longitude');
+        const latInput = form.elements['latitude'];
+        const lonInput = form.elements['longitude'];
+        
         if (latInput && lonInput && navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (pos) => {
