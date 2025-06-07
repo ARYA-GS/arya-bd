@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Criar Registro</title></head>
+<body>
+    <h2>Criar novo registro em {{ collection }}</h2>
+    <form method="POST">
+        {% if collection == "desastres_naturais" %}
+            ID Zona: <input type="text" name="id_zona"><br>
+            Latitude: <input type="text" name="latitude"><br>
+            Longitude: <input type="text" name="longitude"><br>
+            Data (YYYY-MM-DD): <input type="text" name="data"><br>
+            Tipo Evento: <input type="text" name="tipo_evento"><br>
+        {% elif collection == "relatorios_desastres" %}
+            ID Relatório: <input type="text" name="idRelatorio"><br>
+            DataHora: <input type="text" name="dataHora"><br>
+            Latitude: <input type="text" name="latitude"><br>
+            Longitude: <input type="text" name="longitude"><br>
+            Tipo Observação: <input type="text" name="tipoObservacao"><br>
+        {% endif %}
+        <button type="submit">Criar</button>
+    </form>
+</body>
+</html>

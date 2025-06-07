@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Listar Registros</title></head>
+<body>
+    <h2>Registros da collection {{ collection }}</h2>
+    <ul>
+    {% for doc in documentos %}
+        <li>
+            {{ doc }}
+            <a href="/editar/{{ collection }}/{{ doc._id }}">Editar</a> |
+            <a href="/deletar/{{ collection }}/{{ doc._id }}">Deletar</a>
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
