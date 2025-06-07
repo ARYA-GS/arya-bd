@@ -1,0 +1,402 @@
+/* static/css/style.css */
+
+/* --- 1. Variáveis e Reset Global --- */
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary-color: #64748b;
+    --secondary-hover: #475569;
+    --danger-color: #dc2626;
+    --danger-hover: #b91c1c;
+    --success-color: #16a34a;
+    --success-hover: #15803d;
+    
+    --bg-color: #f1f5f9;
+    --card-bg-color: #ffffff;
+    --border-color: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-light: #ffffff;
+
+    --font-family: 'Poppins', sans-serif;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --border-radius: 0.5rem; /* 8px */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+/* --- 2. Layout Principal --- */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--card-bg-color);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.app-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.content-area {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* --- 3. Controles e Formulários --- */
+.controls-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.control-group label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select-wrapper i {
+    position: absolute;
+    left: 0.75rem;
+    color: var(--secondary-color);
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem; /* 6px */
+    padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+    font-size: 1rem;
+    background-color: var(--card-bg-color);
+    min-width: 250px;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+select:disabled {
+    background-color: var(--bg-color);
+    cursor: not-allowed;
+}
+
+.profile-selector-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.profile-selector-wrapper i {
+    position: absolute;
+    left: 0.75rem;
+    color: var(--secondary-color);
+}
+#profile-selector {
+    min-width: 220px;
+}
+
+.actions-group {
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* --- 4. Botões --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary { background-color: var(--primary-color); color: var(--text-light); }
+.btn-primary:hover { background-color: var(--primary-hover); }
+
+.btn-secondary { background-color: #f8fafc; color: var(--secondary-color); border: 1px solid var(--border-color); }
+.btn-secondary:hover { background-color: var(--bg-color); }
+
+.btn-danger { background-color: var(--danger-color); color: var(--text-light); }
+.btn-danger:hover { background-color: var(--danger-hover); }
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon:hover {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+}
+
+.btn:disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    border: none;
+}
+
+/* --- 5. Tabela --- */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+#data-table thead {
+    background-color: #f9fafb;
+}
+
+#data-table th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#data-table td {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+#data-table tbody tr:hover {
+    background-color: var(--bg-color);
+}
+
+.table-message {
+    text-align: center;
+    padding: 3rem;
+    color: var(--secondary-color);
+}
+
+/* --- 6. Modal --- */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(15 23 42 / 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-backdrop:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--card-bg-color);
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-md);
+    transform: scale(0.95);
+    transition: transform 0.3s;
+}
+
+.modal-backdrop:not(.hidden) .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-header h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+#form-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+.form-group input:read-only, .form-group textarea:read-only {
+    background-color: #f8fafc;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* --- 7. Mensagens de Feedback --- */
+.message-container {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 200;
+}
+
+.message-toast {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    color: var(--text-light);
+    box-shadow: var(--shadow-md);
+    animation: slideIn 0.3s ease, fadeOut 0.5s ease 3.5s forwards;
+}
+
+.message-toast.success { background-color: var(--success-color); }
+.message-toast.error { background-color: var(--danger-color); }
+.message-toast i { font-size: 1.25rem; }
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* --- 8. Responsividade --- */
+@media (max-width: 768px) {
+    .app-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .content-area {
+        padding: 1rem;
+    }
+    .controls-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .actions-group {
+        flex-direction: column;
+    }
+    .btn {
+        justify-content: center;
+    }
+    #data-table th, #data-table td {
+        padding: 0.75rem;
+    }
+}

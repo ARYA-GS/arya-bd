@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYA - Plataforma de Dados</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="ri-database-2-line"></i>
+                <h1>ARYA</h1>
+            </div>
+            <div class="profile-selector-wrapper">
+                <i class="ri-user-line"></i>
+                <select id="profile-selector">
+                    <option value="">Selecione um perfil</option>
+                    <option value="Equipe de Campo/Drone">Equipe de Campo/Drone</option>
+                    <option value="Usuário">Usuário</option>
+                </select>
+            </div>
+        </header>
+
+        <main class="content-area">
+            <div class="controls-card card">
+                <div class="control-group">
+                    <label for="collection-selector">Coleção de Dados</label>
+                    <div class="select-wrapper">
+                        <i class="ri-table-line"></i>
+                        <select id="collection-selector" disabled>
+                            <option value="">Aguardando perfil...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="actions-group">
+                    <button id="export-json-btn" class="btn btn-secondary" disabled><i class="ri-file-code-line"></i>Exportar JSON</button>
+                    <button id="export-csv-btn" class="btn btn-secondary" disabled><i class="ri-file-excel-2-line"></i>Exportar CSV</button>
+                    <button id="add-new-btn" class="btn btn-primary" disabled><i class="ri-add-line"></i>Novo Registro</button>
+                </div>
+            </div>
+
+            <div class="data-card card">
+                <div class="table-container">
+                    <table id="data-table">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <p id="table-message" class="table-message">Por favor, selecione seu perfil para começar.</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="form-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="form-title">Detalhes do Registro</h2>
+                <button id="close-modal-btn" class="btn-icon"><i class="ri-close-line"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="data-form">
+                    <input type="hidden" id="doc-id" name="_id">
+                    <div id="form-fields"></div>
+                    <div class="form-actions">
+                        <button type="button" id="cancel-btn" class="btn btn-secondary">Cancelar</button>
+                        <button type="submit" id="save-btn" class="btn btn-primary">Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message-area" class="message-container"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
