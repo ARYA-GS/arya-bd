@@ -31,6 +31,7 @@ INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, carga
 INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN002', 'HUB001', 'Drone Beta', 'Manutenção', 'Y-150', 40, 8, NULL);
 INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN003', 'HUB002', 'Drone Gamma', 'Ativo', 'Z-300', 70, 12, 'Carregando bateria');
 INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN004', NULL, 'Drone Delta', 'Inativo', 'X-100', 30, 6, NULL);
+INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES ('DRN005', 'HUB003', 'Drone Epsilon', 'Ativo', 'Y-200', 60, 9, 'Carregando bateria');
 
 -- ARYA_OCORRENCIA
 INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, data_ocorrencia, descricao, id_usuario, id_endereco, id_area_operacao) VALUES ('OCO001', 'Queimada Florestal', 4, TO_TIMESTAMP('2025-01-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), 'Foco de incêndio detectado em área de vegetação densa, necessitando monitoramento aéreo urgente.', 'USR001', 'END001', 'AREA001');
@@ -43,4 +44,5 @@ INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, d
 INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN001', 'DRN001', 'OCO001', TO_TIMESTAMP('2025-06-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2025-06-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), 'Concluída');
 INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN002', 'DRN002', 'OCO002', TO_TIMESTAMP('2025-06-02 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 'Em andamento');
 INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN003', 'DRN003', 'OCO003', TO_TIMESTAMP('2025-06-03 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2025-06-03 08:15:00', 'YYYY-MM-DD HH24:MI:SS'), 'Concluída');
-
+INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN004', 'DRN004', 'OCO004', TO_TIMESTAMP('2025-06-04 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 'Pendente');
+INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES ('MSN005', 'DRN001', 'OCO005', TO_TIMESTAMP('2025-06-05 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 'Pendente');
