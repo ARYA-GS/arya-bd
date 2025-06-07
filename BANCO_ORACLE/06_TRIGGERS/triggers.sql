@@ -4,11 +4,11 @@ FOR EACH ROW
 DECLARE
     v_email_pattern CONSTANT VARCHAR2(100) := '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$';
 BEGIN
-    -- Validar email com regex simples
+
     IF NOT REGEXP_LIKE(:NEW.email, v_email_pattern) THEN
         RAISE_APPLICATION_ERROR(-20001, 'Email inválido.');
     END IF;
-    -- Validar data de nascimento não ser futura
+
     IF :NEW.data_nasc IS NOT NULL AND :NEW.data_nasc > SYSDATE THEN
         RAISE_APPLICATION_ERROR(-20002, 'Data de nascimento não pode ser futura.');
     END IF;
@@ -52,27 +52,23 @@ CREATE OR REPLACE TRIGGER arya_drone_validacao
 BEFORE INSERT OR UPDATE ON ARYA_DRONE
 FOR EACH ROW
 BEGIN
-    -- Nome obrigatório
+
     IF :NEW.nome IS NULL OR TRIM(:NEW.nome) = '' THEN
         RAISE_APPLICATION_ERROR(-20011, 'Nome do drone é obrigatório.');
     END IF;
 
-    -- Status válido
     IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('ativo', 'inativo', 'em voo', 'manutencao') THEN
         RAISE_APPLICATION_ERROR(-20012, 'Status inválido para Drone.');
     END IF;
 
-    -- Modelo obrigatório
     IF :NEW.modelo IS NULL OR TRIM(:NEW.modelo) = '' THEN
         RAISE_APPLICATION_ERROR(-20016, 'Modelo do drone é obrigatório.');
     END IF;
 
-    -- AlcanceKM deve ser maior que zero
     IF :NEW.alcanceKM IS NULL OR :NEW.alcanceKM <= 0 THEN
         RAISE_APPLICATION_ERROR(-20017, 'Alcance (KM) deve ser maior que zero.');
     END IF;
 
-    -- cargaKg deve ser maior ou igual a zero (pode ser zero)
     IF :NEW.cargaKg IS NULL OR :NEW.cargaKg < 0 THEN
         RAISE_APPLICATION_ERROR(-20018, 'Carga (Kg) não pode ser negativa.');
     END IF;
@@ -81,18 +77,13 @@ END;
 CREATE OR REPLACE TRIGGER arya_missao_drone_validacao
 BEFORE INSERT OR UPDATE ON ARYA_MISSAO_DRONE
 FOR EACH ROW
-BEGIN
-    -- Data início não pode ser nula
+BEGI
     IF :NEW.dataInicio IS NULL THEN
         RAISE_APPLICATION_ERROR(-20019, 'Data de início da missão é obrigatória.');
-    END IF;
-
-    -- Data fim não pode ser anterior à data início (se informada)
+    END I
     IF :NEW.dataFim IS NOT NULL AND :NEW.dataFim < :NEW.dataInicio THEN
         RAISE_APPLICATION_ERROR(-20020, 'Data de fim da missão não pode ser anterior à data de início.');
-    END IF;
-
-    -- Status válido
+    END
     IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('concluída', 'em andamento', 'cancelada') THEN
      RAISE_APPLICATION_ERROR(-20021, 'Status inválido para Missão do drone.');
 END IF;
