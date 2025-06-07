@@ -1,0 +1,4 @@
+db.nome_da_colecao.updateOne(
+  { idRelatorio: 2 },
+  { $set: { nivelGravidade: "Crítica" } }
+);

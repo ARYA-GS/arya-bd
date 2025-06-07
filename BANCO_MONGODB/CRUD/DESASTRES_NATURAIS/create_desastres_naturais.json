@@ -1,0 +1,23 @@
+db.nome_da_colecao.insertOne({
+  id_zona: "Z_0001_NOR",
+  latitude: -12.89945,
+  longitude: -42.27437,
+  data: ISODate("2023-09-12T00:00:00.000Z"),
+  precipitacao_mm: 48.6,
+  temperatura_c: 34.9,
+  umidade_percentual: 25.4,
+  densidade_populacional: 241.1,
+  altitude_metros: 197.9,
+  declividade_graus: 29.9,
+  distancia_agua_km: 4.4,
+  tipo_de_solo: "argiloso_seco",
+  uso_do_solo: "rural",
+  nivel_acessibilidade: "baixa",
+  frequencia_sismos: 0,
+  tipo_evento: "seca",
+  ocorrenca: 0,
+  nivel_de_risco: "BAIXO",
+  mes: 9,
+  estacao_do_ano: "primavera",
+  regiao: "Nordeste_Sertao"
+});

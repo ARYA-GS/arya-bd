@@ -1,0 +1,3 @@
+db.nome_da_colecao.deleteOne({
+  idRelatorio: 1
+});

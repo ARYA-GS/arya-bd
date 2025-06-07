@@ -1,0 +1,14 @@
+db.nome_da_colecao.insertOne({
+  idRelatorio: 3,
+  dataHora: "2025-06-07 10:30:00",
+  latitude: -2.456789,
+  longitude: -60.123456,
+  tipoFonte: "Equipe de Campo",
+  tipoObservacao: "Enchente",
+  nivelGravidade: "Alta",
+  qtdAtingidos: 200,
+  danoInfraestrutura: "Grave",
+  acessibilidade: "Comprometida",
+  notasAdicionais: "Enchente bloqueou vias principais e afetou residências.",
+  classificacaoRisco: "Intervenção Imediata"
+});
