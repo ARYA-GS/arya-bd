@@ -1,5 +1,5 @@
 WITH OcorrenciasCriticasUltimoAno AS (
-    -- Seleciona ocorrências críticas do último ano
+
     SELECT
         oc.id_ocorrencia,
         oc.tipo_ocorrencia,
@@ -11,7 +11,7 @@ WITH OcorrenciasCriticasUltimoAno AS (
       AND oc.data_ocorrencia >= (SYSTIMESTAMP - INTERVAL '1' YEAR)
 ),
 ContagemOcorrenciasPorCidade AS (
-    -- Conta ocorrências críticas por cidade
+
     SELECT
         ed.cidade,
         COUNT(oca.id_ocorrencia) AS total_ocorrencias_criticas,
@@ -21,7 +21,7 @@ ContagemOcorrenciasPorCidade AS (
     GROUP BY ed.cidade
 ),
 TipoOcorrenciaMaisFrequentePorCidade AS (
-    -- Identifica o tipo de ocorrência mais frequente por cidade (entre as críticas)
+
     SELECT
         ed.cidade,
         oca.tipo_ocorrencia,
@@ -29,7 +29,7 @@ TipoOcorrenciaMaisFrequentePorCidade AS (
         ROW_NUMBER() OVER (PARTITION BY ed.cidade ORDER BY COUNT(oca.id_ocorrencia) DESC) AS rn_tipo_frequente
     FROM OcorrenciasCriticasUltimoAno oca
     JOIN ARYA_ENDERECO ed ON oca.id_endereco = ed.id_endereco
-    WHERE ed.cidade IN (SELECT cidade FROM ContagemOcorrenciasPorCidade WHERE rank_cidade <= 3) -- Otimização: processar apenas top 3 cidades
+    WHERE ed.cidade IN (SELECT cidade FROM ContagemOcorrenciasPorCidade WHERE rank_cidade <= 3) 
     GROUP BY ed.cidade, oca.tipo_ocorrencia
 )
 SELECT
@@ -44,7 +44,7 @@ ORDER BY cpc.rank_cidade ASC, cpc.total_ocorrencias_criticas DESC;
 
 
 WITH MediaSeveridadePorTipo AS (
-    -- Calcula a média de severidade por tipo de ocorrência
+
     SELECT
         oc.tipo_ocorrencia,
         AVG(oc.nivel_severidade) AS media_nivel_severidade
@@ -52,13 +52,13 @@ WITH MediaSeveridadePorTipo AS (
     GROUP BY oc.tipo_ocorrencia
 ),
 ContagemUsuarioPorTipoOcorrencia AS (
-    -- Conta quantas vezes cada usuário registrou cada tipo de ocorrência
+
     SELECT
         oc.tipo_ocorrencia,
         oc.id_usuario,
         COUNT(oc.id_ocorrencia) AS total_registros_usuario_tipo,
         ROW_NUMBER() OVER (PARTITION BY oc.tipo_ocorrencia ORDER BY COUNT(oc.id_ocorrencia) DESC, oc.id_usuario ASC) AS rn_usuario_top
-        -- oc.id_usuario ASC é critério de desempate, pega o primeiro em ordem alfabética do ID
+
     FROM ARYA_OCORRENCIA oc
     GROUP BY oc.tipo_ocorrencia, oc.id_usuario
 )
@@ -74,7 +74,7 @@ WHERE cuto.rn_usuario_top = 1
 ORDER BY mst.tipo_ocorrencia;
 
 WITH EstatisticasUsuario AS (
-    -- Calcula total de ocorrências e cidades distintas por usuário
+
     SELECT
         oc.id_usuario,
         COUNT(oc.id_ocorrencia) AS total_ocorrencias_registradas,
@@ -85,14 +85,14 @@ WITH EstatisticasUsuario AS (
     HAVING COUNT(DISTINCT ed.cidade) >= 3
 ),
 TipoOcorrenciaMaisFrequentePorUsuario AS (
-    -- Identifica o tipo de ocorrência mais frequente para cada usuário qualificado
+
     SELECT
         oc.id_usuario,
         oc.tipo_ocorrencia,
         COUNT(oc.id_ocorrencia) AS contagem_tipo,
         ROW_NUMBER() OVER (PARTITION BY oc.id_usuario ORDER BY COUNT(oc.id_ocorrencia) DESC) AS rn_tipo_frequente
     FROM ARYA_OCORRENCIA oc
-    WHERE oc.id_usuario IN (SELECT id_usuario FROM EstatisticasUsuario) -- Processar apenas usuários qualificados
+    WHERE oc.id_usuario IN (SELECT id_usuario FROM EstatisticasUsuario) 
     GROUP BY oc.id_usuario, oc.tipo_ocorrencia
 )
 SELECT
@@ -108,7 +108,7 @@ WHERE tof.rn_tipo_frequente = 1
 ORDER BY eu.total_ocorrencias_registradas DESC, usr.nome;
 
 WITH OcorrenciasNoEnderecoDoHub AS (
-    -- Seleciona ocorrências que aconteceram no endereço de um hub
+
     SELECT
         hub.id_hub,
         hub.nome AS nome_hub,
@@ -116,11 +116,11 @@ WITH OcorrenciasNoEnderecoDoHub AS (
         oc.id_ocorrencia,
         oc.nivel_severidade
     FROM ARYA_OCORRENCIA oc
-    JOIN ARYA_HUB_OPERACIONAL hub ON oc.id_endereco = hub.id_endereco -- Ocorrência no endereço do Hub
+    JOIN ARYA_HUB_OPERACIONAL hub ON oc.id_endereco = hub.id_endereco 
     JOIN ARYA_ENDERECO ed_hub ON hub.id_endereco = ed_hub.id_endereco
 ),
 ContagemDronesPorHub AS (
-    -- Conta o total de drones por hub
+
     SELECT
         dr.id_hub,
         COUNT(dr.id_drone) AS total_drones_no_hub
@@ -128,7 +128,7 @@ ContagemDronesPorHub AS (
     GROUP BY dr.id_hub
 ),
 EstatisticasHub AS (
-    -- Agrega estatísticas de ocorrências por hub
+
     SELECT
         oeh.id_hub,
         oeh.nome_hub,
@@ -144,7 +144,7 @@ SELECT
     eh.cidade_hub,
     eh.total_ocorrencias_no_hub,
     ROUND(eh.media_severidade_no_hub, 2) AS media_severidade_no_hub,
-    COALESCE(cdh.total_drones_no_hub, 0) AS total_drones_alocados_ao_hub -- COALESCE para hubs sem drones
+    COALESCE(cdh.total_drones_no_hub, 0) AS total_drones_alocados_ao_hub 
 FROM EstatisticasHub eh
 LEFT JOIN ContagemDronesPorHub cdh ON eh.id_hub = cdh.id_hub
 WHERE eh.rank_hub <= 3

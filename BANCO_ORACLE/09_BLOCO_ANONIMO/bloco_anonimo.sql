@@ -1,4 +1,3 @@
--- 1. Verificar se um drone pode ser ativado
 DECLARE
     v_id_drone   ARYA_DRONE.id_drone%TYPE := 'DRN001';
     v_status     ARYA_DRONE.status%TYPE;
@@ -22,7 +21,7 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Erro: Drone com ID ' || v_id_drone || ' não encontrado.');
 END;
 
--- 2. Classificar nível de severidade
+
 DECLARE
     v_severidade NUMBER := 8;
 BEGIN
@@ -37,12 +36,11 @@ BEGIN
     END IF;
 END;
 
--- 3. Contar drones ativos e em voo
+
 DECLARE
     v_total_ativos NUMBER;
     v_total_em_voo NUMBER;
 BEGIN
-    -- CORREÇÃO: Usando uma única consulta para mais eficiência.
     SELECT
         SUM(CASE WHEN LOWER(status) = 'ativo'  THEN 1 ELSE 0 END),
         SUM(CASE WHEN LOWER(status) = 'em voo' THEN 1 ELSE 0 END)
@@ -57,7 +55,6 @@ BEGIN
     END IF;
 END;
 
--- 4. Verificar se há muitas ocorrências críticas registradas por um usuário específico
 DECLARE
     v_id_usuario VARCHAR2(50) := 'USR001';
     v_total_criticas NUMBER;
@@ -73,9 +70,8 @@ BEGIN
     END IF;
 END;
 
--- 5. Loop com CONTINUE e EXIT
 DECLARE
-    -- CORREÇÃO: A consulta do cursor foi reescrita com JOIN para melhor performance.
+
     CURSOR c_usuarios IS
         SELECT
             u.id_usuario,
@@ -94,7 +90,7 @@ BEGIN
             DBMS_OUTPUT.PUT_LINE('Usuário: ' || r.nome || ' | Ocorrências: ' || r.total_ocorrencias);
         END IF;
 
-        -- Simula limite de 10 iterações para exemplo (em sistemas reais use EXIT lógicos)
+
         EXIT WHEN r.id_usuario = 'USR010';
     END LOOP;
 END;

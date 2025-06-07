@@ -1,4 +1,3 @@
--- Retorna a pontuação categorizada da severidade de uma ocorrência
 CREATE OR REPLACE FUNCTION pontuacao_severidade (
     p_nivel_severidade IN NUMBER
 ) RETURN VARCHAR2 IS
@@ -14,7 +13,6 @@ BEGIN
     RETURN v_pontuacao;
 END;
 
--- Retorna a quantidade de ocorrências relacionadas a um hub específico
 CREATE OR REPLACE FUNCTION ranking_ocorrencias_hub (
     p_id_hub IN VARCHAR2
 ) RETURN NUMBER IS
@@ -29,8 +27,6 @@ BEGIN
     RETURN v_total;
 END;
 
-
--- Calcula um índice numérico de risco baseado no nível de severidade
 CREATE OR REPLACE FUNCTION calcula_risco (
     p_nivel_severidade IN NUMBER
 ) RETURN NUMBER IS
