@@ -1,0 +1,5100 @@
+[{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c36c"
+  },
+  "idRelatorio": 1,
+  "dataHora": "2025-05-13 14:50:03",
+  "latitude": 3.200033,
+  "longitude": -60.818532,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 156,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c36d"
+  },
+  "idRelatorio": 2,
+  "dataHora": "2025-06-01 17:16:45",
+  "latitude": 1.278283,
+  "longitude": -68.0108,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 133,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c36e"
+  },
+  "idRelatorio": 3,
+  "dataHora": "2025-05-10 00:04:58",
+  "latitude": -28.374458,
+  "longitude": -49.539387,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 56,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c36f"
+  },
+  "idRelatorio": 4,
+  "dataHora": "2025-05-11 04:49:33",
+  "latitude": -28.929635,
+  "longitude": -51.679829,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 134,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c370"
+  },
+  "idRelatorio": 5,
+  "dataHora": "2025-05-27 21:32:39",
+  "latitude": 2.970951,
+  "longitude": -61.051241,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 42,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c371"
+  },
+  "idRelatorio": 6,
+  "dataHora": "2025-05-10 18:44:30",
+  "latitude": -2.62843,
+  "longitude": -43.64127,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 152,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c372"
+  },
+  "idRelatorio": 7,
+  "dataHora": "2025-06-02 04:43:07",
+  "latitude": -2.926449,
+  "longitude": -42.441275,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 164,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c373"
+  },
+  "idRelatorio": 8,
+  "dataHora": "2025-05-16 18:14:09",
+  "latitude": -0.401144,
+  "longitude": -60.040702,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 80,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c374"
+  },
+  "idRelatorio": 9,
+  "dataHora": "2025-06-03 14:02:12",
+  "latitude": -4.873945,
+  "longitude": -41.396508,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 42,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c375"
+  },
+  "idRelatorio": 10,
+  "dataHora": "2025-06-03 20:29:02",
+  "latitude": -6.060499,
+  "longitude": -43.214826,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 70,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c376"
+  },
+  "idRelatorio": 11,
+  "dataHora": "2025-05-30 01:18:05",
+  "latitude": -20.939184,
+  "longitude": -41.527716,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 170,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c377"
+  },
+  "idRelatorio": 12,
+  "dataHora": "2025-05-19 05:06:50",
+  "latitude": 3.451762,
+  "longitude": -63.794048,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 181,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c378"
+  },
+  "idRelatorio": 13,
+  "dataHora": "2025-05-09 04:49:27",
+  "latitude": -28.649154,
+  "longitude": -54.846424,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 67,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c379"
+  },
+  "idRelatorio": 14,
+  "dataHora": "2025-05-15 05:39:35",
+  "latitude": -10.429844,
+  "longitude": -43.232143,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 30,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c37a"
+  },
+  "idRelatorio": 15,
+  "dataHora": "2025-05-25 20:27:25",
+  "latitude": -28.747662,
+  "longitude": -51.883544,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 165,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c37b"
+  },
+  "idRelatorio": 16,
+  "dataHora": "2025-05-29 23:33:59",
+  "latitude": -6.62634,
+  "longitude": -41.023966,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 185,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c37c"
+  },
+  "idRelatorio": 17,
+  "dataHora": "2025-06-04 12:24:04",
+  "latitude": -31.273229,
+  "longitude": -51.558502,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 183,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c37d"
+  },
+  "idRelatorio": 18,
+  "dataHora": "2025-05-22 16:40:15",
+  "latitude": -14.548568,
+  "longitude": -45.874346,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 155,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c37e"
+  },
+  "idRelatorio": 19,
+  "dataHora": "2025-05-30 18:06:02",
+  "latitude": -19.574352,
+  "longitude": -41.270171,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 20,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c37f"
+  },
+  "idRelatorio": 20,
+  "dataHora": "2025-05-21 11:21:46",
+  "latitude": -10.236145,
+  "longitude": -47.55327,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 6,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c380"
+  },
+  "idRelatorio": 21,
+  "dataHora": "2025-05-14 11:08:02",
+  "latitude": -17.439853,
+  "longitude": -52.549227,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 85,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c381"
+  },
+  "idRelatorio": 22,
+  "dataHora": "2025-05-18 12:37:30",
+  "latitude": -15.58994,
+  "longitude": -53.400203,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 100,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c382"
+  },
+  "idRelatorio": 23,
+  "dataHora": "2025-05-30 20:53:42",
+  "latitude": 0.838969,
+  "longitude": -54.753788,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 44,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c383"
+  },
+  "idRelatorio": 24,
+  "dataHora": "2025-05-29 11:15:52",
+  "latitude": -21.478642,
+  "longitude": -56.859086,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 183,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c384"
+  },
+  "idRelatorio": 25,
+  "dataHora": "2025-06-02 23:28:22",
+  "latitude": -8.14293,
+  "longitude": -39.366125,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 161,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c385"
+  },
+  "idRelatorio": 26,
+  "dataHora": "2025-06-05 10:56:07",
+  "latitude": -13.272029,
+  "longitude": -52.761762,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 20,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c386"
+  },
+  "idRelatorio": 27,
+  "dataHora": "2025-05-13 15:24:46",
+  "latitude": -17.165463,
+  "longitude": -53.724229,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 141,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c387"
+  },
+  "idRelatorio": 28,
+  "dataHora": "2025-05-26 19:06:14",
+  "latitude": -8.159369,
+  "longitude": -41.791903,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 106,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c388"
+  },
+  "idRelatorio": 29,
+  "dataHora": "2025-05-16 07:53:19",
+  "latitude": -12.241483,
+  "longitude": -54.037306,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 43,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c389"
+  },
+  "idRelatorio": 30,
+  "dataHora": "2025-05-23 01:54:11",
+  "latitude": -12.247402,
+  "longitude": -38.208388,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 71,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c38a"
+  },
+  "idRelatorio": 31,
+  "dataHora": "2025-06-05 02:16:24",
+  "latitude": -3.549625,
+  "longitude": -54.532257,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 122,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c38b"
+  },
+  "idRelatorio": 32,
+  "dataHora": "2025-05-15 10:26:30",
+  "latitude": 2.159173,
+  "longitude": -52.035926,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 162,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c38c"
+  },
+  "idRelatorio": 33,
+  "dataHora": "2025-05-12 21:16:57",
+  "latitude": -12.641607,
+  "longitude": -40.6714,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 5,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c38d"
+  },
+  "idRelatorio": 34,
+  "dataHora": "2025-06-01 07:28:00",
+  "latitude": -13.699525,
+  "longitude": -45.852781,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 94,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c38e"
+  },
+  "idRelatorio": 35,
+  "dataHora": "2025-06-06 02:17:00",
+  "latitude": -23.172397,
+  "longitude": -46.197111,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 19,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c38f"
+  },
+  "idRelatorio": 36,
+  "dataHora": "2025-05-30 00:21:56",
+  "latitude": -2.112448,
+  "longitude": -46.772062,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 26,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c390"
+  },
+  "idRelatorio": 37,
+  "dataHora": "2025-05-21 16:39:27",
+  "latitude": -5.404247,
+  "longitude": -70.359483,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 147,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c391"
+  },
+  "idRelatorio": 38,
+  "dataHora": "2025-05-25 08:22:06",
+  "latitude": -11.613663,
+  "longitude": -59.263816,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 7,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c392"
+  },
+  "idRelatorio": 39,
+  "dataHora": "2025-05-14 23:05:08",
+  "latitude": -25.610191,
+  "longitude": -53.519115,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 170,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c393"
+  },
+  "idRelatorio": 40,
+  "dataHora": "2025-05-23 04:04:55",
+  "latitude": -21.598935,
+  "longitude": -51.910637,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 192,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c394"
+  },
+  "idRelatorio": 41,
+  "dataHora": "2025-05-14 01:36:47",
+  "latitude": -9.685372,
+  "longitude": -68.169795,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 50,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c395"
+  },
+  "idRelatorio": 42,
+  "dataHora": "2025-05-17 08:24:49",
+  "latitude": -13.796098,
+  "longitude": -43.559601,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 39,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c396"
+  },
+  "idRelatorio": 43,
+  "dataHora": "2025-05-28 08:38:09",
+  "latitude": -22.233682,
+  "longitude": -45.320219,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 132,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c397"
+  },
+  "idRelatorio": 44,
+  "dataHora": "2025-05-26 14:25:06",
+  "latitude": -2.481759,
+  "longitude": -48.408182,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 27,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c398"
+  },
+  "idRelatorio": 45,
+  "dataHora": "2025-05-13 13:18:37",
+  "latitude": -13.135543,
+  "longitude": -49.833436,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 94,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c399"
+  },
+  "idRelatorio": 46,
+  "dataHora": "2025-05-21 09:43:50",
+  "latitude": -18.984188,
+  "longitude": -51.011459,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 25,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c39a"
+  },
+  "idRelatorio": 47,
+  "dataHora": "2025-06-02 03:51:29",
+  "latitude": -15.533592,
+  "longitude": -42.203458,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 103,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c39b"
+  },
+  "idRelatorio": 48,
+  "dataHora": "2025-05-15 10:23:17",
+  "latitude": -24.035654,
+  "longitude": -49.18822,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 24,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c39c"
+  },
+  "idRelatorio": 49,
+  "dataHora": "2025-05-29 08:21:45",
+  "latitude": -8.679007,
+  "longitude": -44.754639,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 156,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c39d"
+  },
+  "idRelatorio": 50,
+  "dataHora": "2025-06-03 11:37:27",
+  "latitude": -12.202778,
+  "longitude": -43.616415,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 185,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c39e"
+  },
+  "idRelatorio": 51,
+  "dataHora": "2025-05-29 23:49:39",
+  "latitude": 1.927449,
+  "longitude": -51.1248,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 93,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c39f"
+  },
+  "idRelatorio": 52,
+  "dataHora": "2025-05-27 17:12:40",
+  "latitude": -8.063969,
+  "longitude": -72.548824,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 132,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a0"
+  },
+  "idRelatorio": 53,
+  "dataHora": "2025-05-26 18:09:03",
+  "latitude": -15.369928,
+  "longitude": -48.218388,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 37,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a1"
+  },
+  "idRelatorio": 54,
+  "dataHora": "2025-05-12 07:29:18",
+  "latitude": -28.363388,
+  "longitude": -53.838223,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 27,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a2"
+  },
+  "idRelatorio": 55,
+  "dataHora": "2025-05-21 03:07:54",
+  "latitude": -5.822485,
+  "longitude": -54.593402,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 79,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a3"
+  },
+  "idRelatorio": 56,
+  "dataHora": "2025-06-02 16:42:18",
+  "latitude": -16.488681,
+  "longitude": -48.549712,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 1,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a4"
+  },
+  "idRelatorio": 57,
+  "dataHora": "2025-05-27 05:09:53",
+  "latitude": -11.525455,
+  "longitude": -40.439199,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 21,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a5"
+  },
+  "idRelatorio": 58,
+  "dataHora": "2025-05-09 04:24:15",
+  "latitude": -3.047999,
+  "longitude": -59.122964,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 107,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a6"
+  },
+  "idRelatorio": 59,
+  "dataHora": "2025-05-28 04:57:26",
+  "latitude": -0.490161,
+  "longitude": -53.226414,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 103,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a7"
+  },
+  "idRelatorio": 60,
+  "dataHora": "2025-05-14 17:14:11",
+  "latitude": -29.348642,
+  "longitude": -51.64949,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 110,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a8"
+  },
+  "idRelatorio": 61,
+  "dataHora": "2025-06-01 23:49:54",
+  "latitude": -12.063591,
+  "longitude": -43.771537,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 22,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3a9"
+  },
+  "idRelatorio": 62,
+  "dataHora": "2025-05-08 04:10:43",
+  "latitude": -21.798179,
+  "longitude": -48.854866,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 188,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3aa"
+  },
+  "idRelatorio": 63,
+  "dataHora": "2025-06-02 11:48:29",
+  "latitude": -16.811708,
+  "longitude": -47.833014,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 55,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ab"
+  },
+  "idRelatorio": 64,
+  "dataHora": "2025-06-01 15:37:28",
+  "latitude": -28.536683,
+  "longitude": -52.530619,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 34,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ac"
+  },
+  "idRelatorio": 65,
+  "dataHora": "2025-06-05 23:30:56",
+  "latitude": -3.869071,
+  "longitude": -40.936506,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 106,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ad"
+  },
+  "idRelatorio": 66,
+  "dataHora": "2025-06-03 11:21:37",
+  "latitude": -25.620232,
+  "longitude": -52.245474,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 91,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ae"
+  },
+  "idRelatorio": 67,
+  "dataHora": "2025-05-22 19:05:36",
+  "latitude": -6.757265,
+  "longitude": -66.984072,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 74,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3af"
+  },
+  "idRelatorio": 68,
+  "dataHora": "2025-05-23 15:20:17",
+  "latitude": -14.530721,
+  "longitude": -59.650252,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 151,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b0"
+  },
+  "idRelatorio": 69,
+  "dataHora": "2025-05-27 19:03:46",
+  "latitude": 1.476208,
+  "longitude": -54.862103,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 174,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b1"
+  },
+  "idRelatorio": 70,
+  "dataHora": "2025-05-20 00:59:15",
+  "latitude": -13.074048,
+  "longitude": -41.553833,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 100,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b2"
+  },
+  "idRelatorio": 71,
+  "dataHora": "2025-05-31 12:52:40",
+  "latitude": -5.588389,
+  "longitude": -40.067541,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 2,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b3"
+  },
+  "idRelatorio": 72,
+  "dataHora": "2025-05-29 22:16:23",
+  "latitude": -19.824007,
+  "longitude": -41.026444,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 19,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b4"
+  },
+  "idRelatorio": 73,
+  "dataHora": "2025-05-23 05:21:51",
+  "latitude": -5.127457,
+  "longitude": -69.169597,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 81,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b5"
+  },
+  "idRelatorio": 74,
+  "dataHora": "2025-05-11 09:22:40",
+  "latitude": -14.254851,
+  "longitude": -56.069831,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 93,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b6"
+  },
+  "idRelatorio": 75,
+  "dataHora": "2025-06-03 01:59:01",
+  "latitude": -1.439505,
+  "longitude": -59.098686,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 96,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b7"
+  },
+  "idRelatorio": 76,
+  "dataHora": "2025-05-24 09:10:38",
+  "latitude": -19.455694,
+  "longitude": -40.060073,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 0,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b8"
+  },
+  "idRelatorio": 77,
+  "dataHora": "2025-05-30 11:53:33",
+  "latitude": -28.030839,
+  "longitude": -49.717667,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 19,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3b9"
+  },
+  "idRelatorio": 78,
+  "dataHora": "2025-05-24 10:29:02",
+  "latitude": -7.72317,
+  "longitude": -45.914079,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 195,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ba"
+  },
+  "idRelatorio": 79,
+  "dataHora": "2025-06-01 19:17:34",
+  "latitude": -2.128235,
+  "longitude": -45.064511,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 158,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3bb"
+  },
+  "idRelatorio": 80,
+  "dataHora": "2025-05-31 14:31:41",
+  "latitude": -12.91163,
+  "longitude": -55.26469,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 77,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3bc"
+  },
+  "idRelatorio": 81,
+  "dataHora": "2025-05-26 22:29:13",
+  "latitude": -4.828967,
+  "longitude": -47.695147,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 98,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3bd"
+  },
+  "idRelatorio": 82,
+  "dataHora": "2025-06-05 13:40:28",
+  "latitude": -3.223192,
+  "longitude": -42.228849,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 188,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3be"
+  },
+  "idRelatorio": 83,
+  "dataHora": "2025-05-22 20:45:11",
+  "latitude": -5.848824,
+  "longitude": -69.577037,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 33,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3bf"
+  },
+  "idRelatorio": 84,
+  "dataHora": "2025-05-23 20:27:30",
+  "latitude": -13.873633,
+  "longitude": -56.044372,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 178,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c0"
+  },
+  "idRelatorio": 85,
+  "dataHora": "2025-05-26 04:58:14",
+  "latitude": -14.055173,
+  "longitude": -53.066774,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 109,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c1"
+  },
+  "idRelatorio": 86,
+  "dataHora": "2025-05-26 18:15:58",
+  "latitude": -22.725735,
+  "longitude": -48.805593,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 145,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c2"
+  },
+  "idRelatorio": 87,
+  "dataHora": "2025-05-20 01:55:31",
+  "latitude": -9.30684,
+  "longitude": -41.838593,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 37,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c3"
+  },
+  "idRelatorio": 88,
+  "dataHora": "2025-05-21 13:16:14",
+  "latitude": 2.26919,
+  "longitude": -61.34737,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 54,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c4"
+  },
+  "idRelatorio": 89,
+  "dataHora": "2025-05-27 23:59:29",
+  "latitude": -21.71225,
+  "longitude": -41.058678,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 72,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c5"
+  },
+  "idRelatorio": 90,
+  "dataHora": "2025-06-06 14:58:17",
+  "latitude": -3.467111,
+  "longitude": -53.744255,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 137,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c6"
+  },
+  "idRelatorio": 91,
+  "dataHora": "2025-05-10 16:42:47",
+  "latitude": -9.219135,
+  "longitude": -55.74637,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 71,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c7"
+  },
+  "idRelatorio": 92,
+  "dataHora": "2025-06-02 00:39:21",
+  "latitude": -0.546002,
+  "longitude": -55.612747,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 51,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c8"
+  },
+  "idRelatorio": 93,
+  "dataHora": "2025-05-10 19:02:19",
+  "latitude": -0.852748,
+  "longitude": -57.734911,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 83,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3c9"
+  },
+  "idRelatorio": 94,
+  "dataHora": "2025-06-02 00:57:46",
+  "latitude": -10.133077,
+  "longitude": -49.153778,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 153,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ca"
+  },
+  "idRelatorio": 95,
+  "dataHora": "2025-05-24 05:11:38",
+  "latitude": -6.691782,
+  "longitude": -45.797127,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 165,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3cb"
+  },
+  "idRelatorio": 96,
+  "dataHora": "2025-05-12 16:30:58",
+  "latitude": -1.766883,
+  "longitude": -56.906791,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 70,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3cc"
+  },
+  "idRelatorio": 97,
+  "dataHora": "2025-05-14 01:42:02",
+  "latitude": -7.850781,
+  "longitude": -63.786562,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 139,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3cd"
+  },
+  "idRelatorio": 98,
+  "dataHora": "2025-06-06 03:53:32",
+  "latitude": -5.623751,
+  "longitude": -35.316951,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 174,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ce"
+  },
+  "idRelatorio": 99,
+  "dataHora": "2025-05-28 16:15:33",
+  "latitude": -8.518321,
+  "longitude": -54.239159,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 71,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3cf"
+  },
+  "idRelatorio": 100,
+  "dataHora": "2025-05-24 06:02:15",
+  "latitude": -3.532678,
+  "longitude": -51.497664,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 90,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d0"
+  },
+  "idRelatorio": 101,
+  "dataHora": "2025-05-19 11:12:00",
+  "latitude": 0.738164,
+  "longitude": -65.77191,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 171,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d1"
+  },
+  "idRelatorio": 102,
+  "dataHora": "2025-05-26 05:31:58",
+  "latitude": -16.717002,
+  "longitude": -41.12492,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 165,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d2"
+  },
+  "idRelatorio": 103,
+  "dataHora": "2025-06-05 02:55:25",
+  "latitude": -10.624862,
+  "longitude": -64.84607,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 135,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d3"
+  },
+  "idRelatorio": 104,
+  "dataHora": "2025-05-14 07:50:06",
+  "latitude": -7.225137,
+  "longitude": -36.961306,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 82,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d4"
+  },
+  "idRelatorio": 105,
+  "dataHora": "2025-05-27 18:10:51",
+  "latitude": -16.515744,
+  "longitude": -53.834186,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 89,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d5"
+  },
+  "idRelatorio": 106,
+  "dataHora": "2025-05-29 16:15:01",
+  "latitude": -2.375745,
+  "longitude": -50.653205,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 93,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d6"
+  },
+  "idRelatorio": 107,
+  "dataHora": "2025-05-30 09:56:25",
+  "latitude": -27.598924,
+  "longitude": -48.576358,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 143,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d7"
+  },
+  "idRelatorio": 108,
+  "dataHora": "2025-06-01 12:45:30",
+  "latitude": -5.883342,
+  "longitude": -58.811317,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 67,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d8"
+  },
+  "idRelatorio": 109,
+  "dataHora": "2025-06-04 00:42:43",
+  "latitude": -3.894255,
+  "longitude": -58.623151,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 126,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3d9"
+  },
+  "idRelatorio": 110,
+  "dataHora": "2025-05-20 04:47:37",
+  "latitude": -19.583422,
+  "longitude": -53.007971,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 54,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3da"
+  },
+  "idRelatorio": 111,
+  "dataHora": "2025-05-20 20:58:25",
+  "latitude": -15.19186,
+  "longitude": -44.120554,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 115,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3db"
+  },
+  "idRelatorio": 112,
+  "dataHora": "2025-05-28 03:40:44",
+  "latitude": -0.167953,
+  "longitude": -65.076345,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 107,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3dc"
+  },
+  "idRelatorio": 113,
+  "dataHora": "2025-05-30 00:27:03",
+  "latitude": -19.029154,
+  "longitude": -49.79158,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 49,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3dd"
+  },
+  "idRelatorio": 114,
+  "dataHora": "2025-05-29 09:57:25",
+  "latitude": -4.051566,
+  "longitude": -54.146749,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 15,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3de"
+  },
+  "idRelatorio": 115,
+  "dataHora": "2025-05-17 23:37:12",
+  "latitude": -23.535379,
+  "longitude": -52.715837,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 15,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3df"
+  },
+  "idRelatorio": 116,
+  "dataHora": "2025-06-04 14:54:34",
+  "latitude": -2.857056,
+  "longitude": -64.650634,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 165,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e0"
+  },
+  "idRelatorio": 117,
+  "dataHora": "2025-05-30 21:40:01",
+  "latitude": -7.068039,
+  "longitude": -54.247561,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 61,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e1"
+  },
+  "idRelatorio": 118,
+  "dataHora": "2025-05-18 14:34:01",
+  "latitude": -12.865187,
+  "longitude": -54.469489,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 65,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e2"
+  },
+  "idRelatorio": 119,
+  "dataHora": "2025-05-15 05:12:02",
+  "latitude": -0.568239,
+  "longitude": -64.235106,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 11,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e3"
+  },
+  "idRelatorio": 120,
+  "dataHora": "2025-05-26 10:41:30",
+  "latitude": -7.605597,
+  "longitude": -53.296363,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 145,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e4"
+  },
+  "idRelatorio": 121,
+  "dataHora": "2025-05-30 01:02:35",
+  "latitude": -11.456351,
+  "longitude": -63.916486,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 165,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e5"
+  },
+  "idRelatorio": 122,
+  "dataHora": "2025-05-18 17:22:18",
+  "latitude": -10.252203,
+  "longitude": -41.635233,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 73,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e6"
+  },
+  "idRelatorio": 123,
+  "dataHora": "2025-05-20 20:11:16",
+  "latitude": -5.941226,
+  "longitude": -56.763883,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 199,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e7"
+  },
+  "idRelatorio": 124,
+  "dataHora": "2025-05-12 18:20:03",
+  "latitude": -1.512294,
+  "longitude": -68.581823,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 30,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e8"
+  },
+  "idRelatorio": 125,
+  "dataHora": "2025-05-15 16:07:06",
+  "latitude": -5.519485,
+  "longitude": -60.965656,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 49,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3e9"
+  },
+  "idRelatorio": 126,
+  "dataHora": "2025-05-14 14:42:11",
+  "latitude": -6.269113,
+  "longitude": -38.516621,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 194,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ea"
+  },
+  "idRelatorio": 127,
+  "dataHora": "2025-05-18 21:49:46",
+  "latitude": -12.101498,
+  "longitude": -46.1611,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 185,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3eb"
+  },
+  "idRelatorio": 128,
+  "dataHora": "2025-05-24 20:43:23",
+  "latitude": -11.073874,
+  "longitude": -61.6201,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 7,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ec"
+  },
+  "idRelatorio": 129,
+  "dataHora": "2025-05-14 10:56:56",
+  "latitude": -1.386755,
+  "longitude": -59.503555,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 166,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ed"
+  },
+  "idRelatorio": 130,
+  "dataHora": "2025-05-18 10:05:06",
+  "latitude": -2.288093,
+  "longitude": -59.521693,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 10,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ee"
+  },
+  "idRelatorio": 131,
+  "dataHora": "2025-05-09 11:40:38",
+  "latitude": -22.343435,
+  "longitude": -45.994688,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 119,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ef"
+  },
+  "idRelatorio": 132,
+  "dataHora": "2025-05-25 04:23:38",
+  "latitude": -3.907793,
+  "longitude": -59.382779,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 132,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f0"
+  },
+  "idRelatorio": 133,
+  "dataHora": "2025-05-17 02:43:37",
+  "latitude": -22.323872,
+  "longitude": -52.689798,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 104,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f1"
+  },
+  "idRelatorio": 134,
+  "dataHora": "2025-05-20 13:14:58",
+  "latitude": -22.533105,
+  "longitude": -54.105244,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 65,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f2"
+  },
+  "idRelatorio": 135,
+  "dataHora": "2025-06-01 22:51:47",
+  "latitude": -6.576188,
+  "longitude": -72.666366,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 42,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f3"
+  },
+  "idRelatorio": 136,
+  "dataHora": "2025-05-13 02:13:28",
+  "latitude": -6.54878,
+  "longitude": -48.150473,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 121,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f4"
+  },
+  "idRelatorio": 137,
+  "dataHora": "2025-05-11 06:44:01",
+  "latitude": -8.86474,
+  "longitude": -63.106643,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 73,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f5"
+  },
+  "idRelatorio": 138,
+  "dataHora": "2025-05-29 02:37:34",
+  "latitude": -13.402586,
+  "longitude": -42.971754,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 35,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f6"
+  },
+  "idRelatorio": 139,
+  "dataHora": "2025-05-28 05:20:22",
+  "latitude": -17.844307,
+  "longitude": -45.605748,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 13,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f7"
+  },
+  "idRelatorio": 140,
+  "dataHora": "2025-05-22 01:43:21",
+  "latitude": -31.216941,
+  "longitude": -54.660957,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 71,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f8"
+  },
+  "idRelatorio": 141,
+  "dataHora": "2025-05-08 07:03:24",
+  "latitude": -4.651011,
+  "longitude": -45.058839,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 196,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3f9"
+  },
+  "idRelatorio": 142,
+  "dataHora": "2025-05-20 20:15:37",
+  "latitude": -26.415819,
+  "longitude": -51.95774,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 129,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3fa"
+  },
+  "idRelatorio": 143,
+  "dataHora": "2025-06-05 21:08:18",
+  "latitude": -0.825923,
+  "longitude": -49.381006,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 59,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3fb"
+  },
+  "idRelatorio": 144,
+  "dataHora": "2025-05-14 11:07:25",
+  "latitude": -5.465156,
+  "longitude": -38.36142,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 113,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3fc"
+  },
+  "idRelatorio": 145,
+  "dataHora": "2025-05-22 01:23:33",
+  "latitude": -15.600079,
+  "longitude": -59.558676,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 143,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3fd"
+  },
+  "idRelatorio": 146,
+  "dataHora": "2025-05-15 12:11:43",
+  "latitude": -5.260647,
+  "longitude": -53.234679,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 54,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3fe"
+  },
+  "idRelatorio": 147,
+  "dataHora": "2025-05-25 03:16:06",
+  "latitude": -3.140907,
+  "longitude": -53.652992,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 161,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c3ff"
+  },
+  "idRelatorio": 148,
+  "dataHora": "2025-05-31 09:33:10",
+  "latitude": -21.010208,
+  "longitude": -56.350914,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 136,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c400"
+  },
+  "idRelatorio": 149,
+  "dataHora": "2025-05-12 07:21:05",
+  "latitude": -14.463598,
+  "longitude": -51.381293,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 5,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c401"
+  },
+  "idRelatorio": 150,
+  "dataHora": "2025-05-24 07:59:30",
+  "latitude": -10.331616,
+  "longitude": -58.077986,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 24,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c402"
+  },
+  "idRelatorio": 151,
+  "dataHora": "2025-05-07 21:06:24",
+  "latitude": -5.022395,
+  "longitude": -63.219975,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 12,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c403"
+  },
+  "idRelatorio": 152,
+  "dataHora": "2025-05-29 05:21:59",
+  "latitude": -9.220835,
+  "longitude": -43.484902,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 107,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c404"
+  },
+  "idRelatorio": 153,
+  "dataHora": "2025-05-25 20:57:04",
+  "latitude": 2.599416,
+  "longitude": -63.244263,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 35,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c405"
+  },
+  "idRelatorio": 154,
+  "dataHora": "2025-06-01 23:29:20",
+  "latitude": -16.383336,
+  "longitude": -41.955987,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 7,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c406"
+  },
+  "idRelatorio": 155,
+  "dataHora": "2025-05-08 03:45:52",
+  "latitude": -5.234844,
+  "longitude": -62.568671,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 198,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c407"
+  },
+  "idRelatorio": 156,
+  "dataHora": "2025-05-15 23:18:13",
+  "latitude": -12.620486,
+  "longitude": -49.81576,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 151,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c408"
+  },
+  "idRelatorio": 157,
+  "dataHora": "2025-05-29 15:16:39",
+  "latitude": -7.164744,
+  "longitude": -72.45344,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 46,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c409"
+  },
+  "idRelatorio": 158,
+  "dataHora": "2025-05-19 02:37:49",
+  "latitude": -1.240385,
+  "longitude": -48.418063,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 124,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c40a"
+  },
+  "idRelatorio": 159,
+  "dataHora": "2025-05-25 17:03:27",
+  "latitude": -6.948021,
+  "longitude": -42.53474,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 77,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c40b"
+  },
+  "idRelatorio": 160,
+  "dataHora": "2025-05-31 07:37:03",
+  "latitude": -2.765991,
+  "longitude": -47.451465,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 176,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c40c"
+  },
+  "idRelatorio": 161,
+  "dataHora": "2025-05-23 22:22:18",
+  "latitude": -8.252279,
+  "longitude": -69.09975,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 18,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c40d"
+  },
+  "idRelatorio": 162,
+  "dataHora": "2025-05-08 13:01:20",
+  "latitude": -28.135103,
+  "longitude": -50.877752,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 82,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c40e"
+  },
+  "idRelatorio": 163,
+  "dataHora": "2025-05-13 08:19:36",
+  "latitude": -9.030267,
+  "longitude": -64.939395,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 145,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c40f"
+  },
+  "idRelatorio": 164,
+  "dataHora": "2025-06-04 09:57:27",
+  "latitude": -17.275812,
+  "longitude": -44.746057,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 9,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c410"
+  },
+  "idRelatorio": 165,
+  "dataHora": "2025-06-01 18:14:26",
+  "latitude": -10.598997,
+  "longitude": -51.354287,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 56,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c411"
+  },
+  "idRelatorio": 166,
+  "dataHora": "2025-05-30 11:56:35",
+  "latitude": -6.770785,
+  "longitude": -58.757604,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 124,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c412"
+  },
+  "idRelatorio": 167,
+  "dataHora": "2025-05-13 15:59:02",
+  "latitude": -4.750898,
+  "longitude": -58.372088,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 190,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c413"
+  },
+  "idRelatorio": 168,
+  "dataHora": "2025-05-08 04:13:55",
+  "latitude": -8.169796,
+  "longitude": -67.812352,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 190,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c414"
+  },
+  "idRelatorio": 169,
+  "dataHora": "2025-05-28 07:56:48",
+  "latitude": -15.072885,
+  "longitude": -48.880177,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 190,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c415"
+  },
+  "idRelatorio": 170,
+  "dataHora": "2025-05-17 05:59:28",
+  "latitude": 0.122991,
+  "longitude": -60.066931,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 86,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c416"
+  },
+  "idRelatorio": 171,
+  "dataHora": "2025-06-03 06:27:25",
+  "latitude": -17.487666,
+  "longitude": -54.161211,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 79,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c417"
+  },
+  "idRelatorio": 172,
+  "dataHora": "2025-05-24 09:38:08",
+  "latitude": -0.01574,
+  "longitude": -60.106355,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 152,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c418"
+  },
+  "idRelatorio": 173,
+  "dataHora": "2025-05-26 23:11:36",
+  "latitude": -10.124653,
+  "longitude": -47.170404,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 48,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c419"
+  },
+  "idRelatorio": 174,
+  "dataHora": "2025-06-02 05:32:29",
+  "latitude": -9.431874,
+  "longitude": -63.66993,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 76,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c41a"
+  },
+  "idRelatorio": 175,
+  "dataHora": "2025-05-15 23:05:40",
+  "latitude": -12.884228,
+  "longitude": -47.522021,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 148,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c41b"
+  },
+  "idRelatorio": 176,
+  "dataHora": "2025-05-20 07:42:46",
+  "latitude": 1.093134,
+  "longitude": -63.329483,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 171,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c41c"
+  },
+  "idRelatorio": 177,
+  "dataHora": "2025-05-20 04:10:12",
+  "latitude": -15.415112,
+  "longitude": -60.246972,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 134,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c41d"
+  },
+  "idRelatorio": 178,
+  "dataHora": "2025-05-19 08:52:08",
+  "latitude": -16.384994,
+  "longitude": -42.820236,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 181,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c41e"
+  },
+  "idRelatorio": 179,
+  "dataHora": "2025-05-12 19:59:43",
+  "latitude": -27.541111,
+  "longitude": -53.033241,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 71,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c41f"
+  },
+  "idRelatorio": 180,
+  "dataHora": "2025-05-31 21:35:46",
+  "latitude": -5.983203,
+  "longitude": -63.16558,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 43,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c420"
+  },
+  "idRelatorio": 181,
+  "dataHora": "2025-05-28 15:21:00",
+  "latitude": -3.404352,
+  "longitude": -48.769573,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 53,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c421"
+  },
+  "idRelatorio": 182,
+  "dataHora": "2025-06-03 12:27:03",
+  "latitude": -9.764616,
+  "longitude": -43.951889,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 188,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c422"
+  },
+  "idRelatorio": 183,
+  "dataHora": "2025-05-10 14:04:38",
+  "latitude": 4.105521,
+  "longitude": -59.859853,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 93,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c423"
+  },
+  "idRelatorio": 184,
+  "dataHora": "2025-06-02 21:57:44",
+  "latitude": -6.738035,
+  "longitude": -43.638346,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 69,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c424"
+  },
+  "idRelatorio": 185,
+  "dataHora": "2025-05-11 00:02:11",
+  "latitude": -19.81188,
+  "longitude": -48.33996,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 194,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c425"
+  },
+  "idRelatorio": 186,
+  "dataHora": "2025-05-27 03:49:18",
+  "latitude": -2.397387,
+  "longitude": -56.487999,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 131,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c426"
+  },
+  "idRelatorio": 187,
+  "dataHora": "2025-05-23 17:38:32",
+  "latitude": -0.504743,
+  "longitude": -68.317953,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 187,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c427"
+  },
+  "idRelatorio": 188,
+  "dataHora": "2025-06-06 10:16:09",
+  "latitude": -19.531731,
+  "longitude": -41.572195,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 105,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c428"
+  },
+  "idRelatorio": 189,
+  "dataHora": "2025-05-13 11:36:20",
+  "latitude": -11.539424,
+  "longitude": -53.471088,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 82,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c429"
+  },
+  "idRelatorio": 190,
+  "dataHora": "2025-05-20 16:56:19",
+  "latitude": 0.462615,
+  "longitude": -57.757835,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 45,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c42a"
+  },
+  "idRelatorio": 191,
+  "dataHora": "2025-06-05 15:16:06",
+  "latitude": -23.596068,
+  "longitude": -46.279247,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 76,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c42b"
+  },
+  "idRelatorio": 192,
+  "dataHora": "2025-05-24 12:07:40",
+  "latitude": -7.440032,
+  "longitude": -63.051838,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 108,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c42c"
+  },
+  "idRelatorio": 193,
+  "dataHora": "2025-05-10 20:15:58",
+  "latitude": -6.807568,
+  "longitude": -72.439077,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 197,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c42d"
+  },
+  "idRelatorio": 194,
+  "dataHora": "2025-05-31 07:44:03",
+  "latitude": -11.889353,
+  "longitude": -63.999687,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 95,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c42e"
+  },
+  "idRelatorio": 195,
+  "dataHora": "2025-05-27 19:46:01",
+  "latitude": -1.70182,
+  "longitude": -44.872122,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 73,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c42f"
+  },
+  "idRelatorio": 196,
+  "dataHora": "2025-05-13 22:42:35",
+  "latitude": -11.42557,
+  "longitude": -41.564948,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 159,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c430"
+  },
+  "idRelatorio": 197,
+  "dataHora": "2025-05-14 10:48:39",
+  "latitude": 0.247742,
+  "longitude": -66.434735,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 194,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c431"
+  },
+  "idRelatorio": 198,
+  "dataHora": "2025-05-28 16:10:49",
+  "latitude": -10.546537,
+  "longitude": -61.980159,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 140,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c432"
+  },
+  "idRelatorio": 199,
+  "dataHora": "2025-05-11 01:02:28",
+  "latitude": -9.573364,
+  "longitude": -38.847167,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 9,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c433"
+  },
+  "idRelatorio": 200,
+  "dataHora": "2025-05-27 08:58:15",
+  "latitude": -2.124925,
+  "longitude": -63.306791,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 48,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c434"
+  },
+  "idRelatorio": 201,
+  "dataHora": "2025-05-10 04:38:23",
+  "latitude": -7.706693,
+  "longitude": -72.726925,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 85,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c435"
+  },
+  "idRelatorio": 202,
+  "dataHora": "2025-05-26 16:06:54",
+  "latitude": -5.132156,
+  "longitude": -61.29108,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 102,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c436"
+  },
+  "idRelatorio": 203,
+  "dataHora": "2025-05-29 05:56:20",
+  "latitude": -14.572625,
+  "longitude": -44.216697,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 151,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c437"
+  },
+  "idRelatorio": 204,
+  "dataHora": "2025-05-12 16:32:14",
+  "latitude": -22.010614,
+  "longitude": -45.49119,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 34,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c438"
+  },
+  "idRelatorio": 205,
+  "dataHora": "2025-05-11 09:40:32",
+  "latitude": -5.940494,
+  "longitude": -45.795741,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 50,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c439"
+  },
+  "idRelatorio": 206,
+  "dataHora": "2025-05-28 03:53:40",
+  "latitude": -4.768442,
+  "longitude": -48.94279,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 102,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c43a"
+  },
+  "idRelatorio": 207,
+  "dataHora": "2025-05-11 05:16:44",
+  "latitude": -8.197867,
+  "longitude": -63.403862,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 68,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c43b"
+  },
+  "idRelatorio": 208,
+  "dataHora": "2025-05-08 02:11:41",
+  "latitude": -27.583118,
+  "longitude": -51.517061,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 136,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c43c"
+  },
+  "idRelatorio": 209,
+  "dataHora": "2025-05-18 19:45:32",
+  "latitude": -18.143203,
+  "longitude": -47.822508,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 10,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c43d"
+  },
+  "idRelatorio": 210,
+  "dataHora": "2025-05-29 06:05:36",
+  "latitude": -31.554682,
+  "longitude": -51.829636,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 170,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c43e"
+  },
+  "idRelatorio": 211,
+  "dataHora": "2025-05-20 08:00:27",
+  "latitude": -8.561436,
+  "longitude": -55.797586,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 24,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c43f"
+  },
+  "idRelatorio": 212,
+  "dataHora": "2025-05-14 04:38:40",
+  "latitude": -12.405775,
+  "longitude": -50.001271,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 94,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c440"
+  },
+  "idRelatorio": 213,
+  "dataHora": "2025-05-22 22:31:28",
+  "latitude": -8.622904,
+  "longitude": -55.44081,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 196,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c441"
+  },
+  "idRelatorio": 214,
+  "dataHora": "2025-05-14 18:54:30",
+  "latitude": -21.907687,
+  "longitude": -45.141625,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 18,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c442"
+  },
+  "idRelatorio": 215,
+  "dataHora": "2025-05-10 00:13:50",
+  "latitude": -28.480524,
+  "longitude": -53.979638,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 132,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c443"
+  },
+  "idRelatorio": 216,
+  "dataHora": "2025-05-31 16:05:11",
+  "latitude": -11.692874,
+  "longitude": -53.239051,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 164,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c444"
+  },
+  "idRelatorio": 217,
+  "dataHora": "2025-06-05 10:15:01",
+  "latitude": -5.37986,
+  "longitude": -50.622364,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 19,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c445"
+  },
+  "idRelatorio": 218,
+  "dataHora": "2025-05-16 16:20:35",
+  "latitude": -5.637421,
+  "longitude": -67.315866,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 154,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c446"
+  },
+  "idRelatorio": 219,
+  "dataHora": "2025-05-26 14:34:47",
+  "latitude": -3.942218,
+  "longitude": -63.267475,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 107,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c447"
+  },
+  "idRelatorio": 220,
+  "dataHora": "2025-06-04 21:49:57",
+  "latitude": -6.263474,
+  "longitude": -57.711368,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 25,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c448"
+  },
+  "idRelatorio": 221,
+  "dataHora": "2025-05-11 09:53:58",
+  "latitude": -6.109586,
+  "longitude": -69.16354,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 171,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c449"
+  },
+  "idRelatorio": 222,
+  "dataHora": "2025-05-23 23:31:39",
+  "latitude": -7.727203,
+  "longitude": -61.646169,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 120,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c44a"
+  },
+  "idRelatorio": 223,
+  "dataHora": "2025-05-22 17:03:47",
+  "latitude": -12.56978,
+  "longitude": -51.021358,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 13,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c44b"
+  },
+  "idRelatorio": 224,
+  "dataHora": "2025-05-23 18:20:03",
+  "latitude": -22.948206,
+  "longitude": -51.384687,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 89,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c44c"
+  },
+  "idRelatorio": 225,
+  "dataHora": "2025-06-04 09:35:59",
+  "latitude": -16.670427,
+  "longitude": -57.134271,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 49,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c44d"
+  },
+  "idRelatorio": 226,
+  "dataHora": "2025-05-17 10:17:16",
+  "latitude": -10.637538,
+  "longitude": -43.200904,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 105,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c44e"
+  },
+  "idRelatorio": 227,
+  "dataHora": "2025-05-29 10:52:25",
+  "latitude": -5.363632,
+  "longitude": -55.001707,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 38,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c44f"
+  },
+  "idRelatorio": 228,
+  "dataHora": "2025-05-17 06:59:41",
+  "latitude": -6.228865,
+  "longitude": -38.197497,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 61,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c450"
+  },
+  "idRelatorio": 229,
+  "dataHora": "2025-06-04 12:39:15",
+  "latitude": -14.706233,
+  "longitude": -55.548422,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 165,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c451"
+  },
+  "idRelatorio": 230,
+  "dataHora": "2025-06-04 16:06:40",
+  "latitude": -8.722832,
+  "longitude": -36.538869,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 70,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c452"
+  },
+  "idRelatorio": 231,
+  "dataHora": "2025-05-29 03:10:15",
+  "latitude": -11.854803,
+  "longitude": -52.077337,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 32,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c453"
+  },
+  "idRelatorio": 232,
+  "dataHora": "2025-05-18 00:55:55",
+  "latitude": -17.060585,
+  "longitude": -51.006852,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 51,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c454"
+  },
+  "idRelatorio": 233,
+  "dataHora": "2025-05-07 22:43:57",
+  "latitude": -10.62069,
+  "longitude": -39.465901,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 166,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c455"
+  },
+  "idRelatorio": 234,
+  "dataHora": "2025-05-16 01:30:59",
+  "latitude": -11.54922,
+  "longitude": -63.490742,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 167,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c456"
+  },
+  "idRelatorio": 235,
+  "dataHora": "2025-05-18 00:04:15",
+  "latitude": -11.643747,
+  "longitude": -47.659053,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 177,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c457"
+  },
+  "idRelatorio": 236,
+  "dataHora": "2025-06-06 14:27:06",
+  "latitude": -8.30185,
+  "longitude": -69.114476,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 95,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c458"
+  },
+  "idRelatorio": 237,
+  "dataHora": "2025-05-11 22:30:53",
+  "latitude": -21.71158,
+  "longitude": -43.480392,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 2,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c459"
+  },
+  "idRelatorio": 238,
+  "dataHora": "2025-06-05 21:52:36",
+  "latitude": -25.465941,
+  "longitude": -49.992962,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 176,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c45a"
+  },
+  "idRelatorio": 239,
+  "dataHora": "2025-06-02 20:44:14",
+  "latitude": -6.838964,
+  "longitude": -46.080236,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 189,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c45b"
+  },
+  "idRelatorio": 240,
+  "dataHora": "2025-06-05 06:54:16",
+  "latitude": -3.920687,
+  "longitude": -43.453545,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 94,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c45c"
+  },
+  "idRelatorio": 241,
+  "dataHora": "2025-05-14 04:35:39",
+  "latitude": -11.675732,
+  "longitude": -48.824327,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 189,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c45d"
+  },
+  "idRelatorio": 242,
+  "dataHora": "2025-05-31 21:56:55",
+  "latitude": -2.696728,
+  "longitude": -54.32799,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 81,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c45e"
+  },
+  "idRelatorio": 243,
+  "dataHora": "2025-05-15 22:47:44",
+  "latitude": -30.511897,
+  "longitude": -56.385277,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 119,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c45f"
+  },
+  "idRelatorio": 244,
+  "dataHora": "2025-05-16 06:33:37",
+  "latitude": -17.490092,
+  "longitude": -55.656625,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 87,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c460"
+  },
+  "idRelatorio": 245,
+  "dataHora": "2025-06-04 14:11:58",
+  "latitude": -9.659002,
+  "longitude": -43.657778,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 28,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c461"
+  },
+  "idRelatorio": 246,
+  "dataHora": "2025-05-17 02:21:02",
+  "latitude": -17.511958,
+  "longitude": -44.405966,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 50,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c462"
+  },
+  "idRelatorio": 247,
+  "dataHora": "2025-06-03 20:30:17",
+  "latitude": -9.841464,
+  "longitude": -63.520739,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 160,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c463"
+  },
+  "idRelatorio": 248,
+  "dataHora": "2025-05-14 03:41:05",
+  "latitude": -10.770667,
+  "longitude": -63.041694,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 109,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Encosta cedeu parcialmente, risco de novos deslizamentos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c464"
+  },
+  "idRelatorio": 249,
+  "dataHora": "2025-05-12 19:27:49",
+  "latitude": 0.270171,
+  "longitude": -69.775197,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 7,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c465"
+  },
+  "idRelatorio": 250,
+  "dataHora": "2025-05-15 06:15:54",
+  "latitude": 0.818024,
+  "longitude": -51.867144,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 142,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c466"
+  },
+  "idRelatorio": 251,
+  "dataHora": "2025-05-22 16:05:25",
+  "latitude": -12.591601,
+  "longitude": -42.324247,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 52,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c467"
+  },
+  "idRelatorio": 252,
+  "dataHora": "2025-05-16 15:56:15",
+  "latitude": -14.460659,
+  "longitude": -54.258297,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 162,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c468"
+  },
+  "idRelatorio": 253,
+  "dataHora": "2025-06-01 03:42:05",
+  "latitude": -28.064401,
+  "longitude": -51.393665,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 79,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c469"
+  },
+  "idRelatorio": 254,
+  "dataHora": "2025-05-08 14:46:57",
+  "latitude": -3.578946,
+  "longitude": -61.067302,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 27,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c46a"
+  },
+  "idRelatorio": 255,
+  "dataHora": "2025-05-13 02:37:00",
+  "latitude": -4.664689,
+  "longitude": -52.595148,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 152,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c46b"
+  },
+  "idRelatorio": 256,
+  "dataHora": "2025-05-19 07:04:04",
+  "latitude": -3.812601,
+  "longitude": -64.435383,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 67,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c46c"
+  },
+  "idRelatorio": 257,
+  "dataHora": "2025-06-01 03:16:39",
+  "latitude": -4.604275,
+  "longitude": -37.828267,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 58,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c46d"
+  },
+  "idRelatorio": 258,
+  "dataHora": "2025-05-21 19:54:22",
+  "latitude": -30.59671,
+  "longitude": -53.959818,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 92,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c46e"
+  },
+  "idRelatorio": 259,
+  "dataHora": "2025-05-29 05:25:46",
+  "latitude": -6.082724,
+  "longitude": -52.483567,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 152,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c46f"
+  },
+  "idRelatorio": 260,
+  "dataHora": "2025-05-30 04:47:45",
+  "latitude": -28.064448,
+  "longitude": -50.17771,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 184,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c470"
+  },
+  "idRelatorio": 261,
+  "dataHora": "2025-05-25 22:17:21",
+  "latitude": -16.360753,
+  "longitude": -54.143569,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 160,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c471"
+  },
+  "idRelatorio": 262,
+  "dataHora": "2025-05-21 04:53:44",
+  "latitude": -15.53519,
+  "longitude": -57.312234,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 193,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c472"
+  },
+  "idRelatorio": 263,
+  "dataHora": "2025-05-19 01:54:08",
+  "latitude": -4.170113,
+  "longitude": -38.717006,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 185,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c473"
+  },
+  "idRelatorio": 264,
+  "dataHora": "2025-05-15 18:04:52",
+  "latitude": -5.288936,
+  "longitude": -40.736399,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 85,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c474"
+  },
+  "idRelatorio": 265,
+  "dataHora": "2025-06-05 16:10:04",
+  "latitude": -4.062507,
+  "longitude": -39.369597,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 99,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c475"
+  },
+  "idRelatorio": 266,
+  "dataHora": "2025-05-16 15:13:32",
+  "latitude": -3.743294,
+  "longitude": -51.781297,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 14,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c476"
+  },
+  "idRelatorio": 267,
+  "dataHora": "2025-05-24 08:09:01",
+  "latitude": -21.70609,
+  "longitude": -55.443898,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 150,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c477"
+  },
+  "idRelatorio": 268,
+  "dataHora": "2025-05-15 23:04:25",
+  "latitude": -0.429582,
+  "longitude": -54.45142,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 105,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c478"
+  },
+  "idRelatorio": 269,
+  "dataHora": "2025-05-22 09:07:15",
+  "latitude": -8.827118,
+  "longitude": -38.93654,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 82,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Queda de poste afeta fornecimento elétrico.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c479"
+  },
+  "idRelatorio": 270,
+  "dataHora": "2025-05-31 07:05:37",
+  "latitude": -7.660061,
+  "longitude": -70.269383,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 86,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c47a"
+  },
+  "idRelatorio": 271,
+  "dataHora": "2025-05-08 02:46:09",
+  "latitude": -23.334228,
+  "longitude": -54.349183,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 39,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c47b"
+  },
+  "idRelatorio": 272,
+  "dataHora": "2025-05-10 23:11:03",
+  "latitude": -2.89596,
+  "longitude": -53.497712,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 181,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c47c"
+  },
+  "idRelatorio": 273,
+  "dataHora": "2025-05-18 19:45:18",
+  "latitude": -7.0614,
+  "longitude": -72.179493,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 192,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c47d"
+  },
+  "idRelatorio": 274,
+  "dataHora": "2025-05-28 11:37:17",
+  "latitude": -2.691939,
+  "longitude": -56.044987,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 48,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c47e"
+  },
+  "idRelatorio": 275,
+  "dataHora": "2025-05-30 04:43:26",
+  "latitude": -24.638562,
+  "longitude": -48.370746,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 57,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c47f"
+  },
+  "idRelatorio": 276,
+  "dataHora": "2025-05-14 13:36:41",
+  "latitude": -0.801078,
+  "longitude": -52.837676,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 19,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c480"
+  },
+  "idRelatorio": 277,
+  "dataHora": "2025-06-03 10:49:46",
+  "latitude": -6.671592,
+  "longitude": -53.464313,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 104,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c481"
+  },
+  "idRelatorio": 278,
+  "dataHora": "2025-06-03 19:47:41",
+  "latitude": -5.007794,
+  "longitude": -64.085469,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 18,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c482"
+  },
+  "idRelatorio": 279,
+  "dataHora": "2025-05-27 07:58:08",
+  "latitude": 0.244287,
+  "longitude": -51.988025,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 98,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c483"
+  },
+  "idRelatorio": 280,
+  "dataHora": "2025-05-31 22:28:48",
+  "latitude": -14.292121,
+  "longitude": -51.387785,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 80,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c484"
+  },
+  "idRelatorio": 281,
+  "dataHora": "2025-05-19 03:32:48",
+  "latitude": -5.724732,
+  "longitude": -50.815959,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 3,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Prédio com estrutura comprometida após tremor.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c485"
+  },
+  "idRelatorio": 282,
+  "dataHora": "2025-05-11 21:38:27",
+  "latitude": -1.270447,
+  "longitude": -59.084673,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 174,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Barreiras naturais impedem saída de moradores.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c486"
+  },
+  "idRelatorio": 283,
+  "dataHora": "2025-05-26 23:28:45",
+  "latitude": 1.382159,
+  "longitude": -55.302779,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 36,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Comunidade sem acesso após queda de ponte.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c487"
+  },
+  "idRelatorio": 284,
+  "dataHora": "2025-05-23 02:28:48",
+  "latitude": -26.90157,
+  "longitude": -53.026902,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 55,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c488"
+  },
+  "idRelatorio": 285,
+  "dataHora": "2025-05-19 21:25:09",
+  "latitude": -15.050602,
+  "longitude": -60.067414,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 65,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c489"
+  },
+  "idRelatorio": 286,
+  "dataHora": "2025-05-15 16:07:21",
+  "latitude": -18.887179,
+  "longitude": -46.950254,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 107,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Moradores evacuados devido à fumaça intensa.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c48a"
+  },
+  "idRelatorio": 287,
+  "dataHora": "2025-05-27 04:31:30",
+  "latitude": -12.027305,
+  "longitude": -40.482258,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 53,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c48b"
+  },
+  "idRelatorio": 288,
+  "dataHora": "2025-06-06 00:19:56",
+  "latitude": -10.411611,
+  "longitude": -59.859252,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 168,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c48c"
+  },
+  "idRelatorio": 289,
+  "dataHora": "2025-05-17 21:34:19",
+  "latitude": -5.938215,
+  "longitude": -49.407165,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 129,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Água acumulada impede o tráfego de veículos.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c48d"
+  },
+  "idRelatorio": 290,
+  "dataHora": "2025-05-18 09:14:33",
+  "latitude": -10.275218,
+  "longitude": -38.239493,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 74,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c48e"
+  },
+  "idRelatorio": 291,
+  "dataHora": "2025-05-17 12:22:01",
+  "latitude": -5.200046,
+  "longitude": -37.453289,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 61,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Incêndio em vegetação próximo a área urbana.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c48f"
+  },
+  "idRelatorio": 292,
+  "dataHora": "2025-05-27 02:41:54",
+  "latitude": 1.385095,
+  "longitude": -59.519161,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 128,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c490"
+  },
+  "idRelatorio": 293,
+  "dataHora": "2025-05-08 05:13:02",
+  "latitude": -1.188109,
+  "longitude": -67.02607,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 33,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c491"
+  },
+  "idRelatorio": 294,
+  "dataHora": "2025-05-28 13:17:21",
+  "latitude": -11.687807,
+  "longitude": -56.760729,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 175,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Área interditada após deslizamento de terra.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c492"
+  },
+  "idRelatorio": 295,
+  "dataHora": "2025-05-18 04:57:57",
+  "latitude": -13.202179,
+  "longitude": -51.887729,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Estrutura Danificada",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 172,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Ponte apresenta rachaduras na base.",
+  "classificacaoRisco": "Risco Imediato"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c493"
+  },
+  "idRelatorio": 296,
+  "dataHora": "2025-06-05 06:25:49",
+  "latitude": -27.499841,
+  "longitude": -52.348277,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Incêndio",
+  "nivelGravidade": "Média",
+  "qtdAtingidos": 31,
+  "danoInfraestrutura": "Leve",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Fogo controlado por brigada local, mas danos registrados.",
+  "classificacaoRisco": "Monitorar"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c494"
+  },
+  "idRelatorio": 297,
+  "dataHora": "2025-05-10 23:01:04",
+  "latitude": -7.752602,
+  "longitude": -62.389235,
+  "tipoFonte": "App Usuário",
+  "tipoObservacao": "Deslizamento",
+  "nivelGravidade": "Alta",
+  "qtdAtingidos": 111,
+  "danoInfraestrutura": "Nenhum",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Deslizamento atingiu parte de uma residência.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c495"
+  },
+  "idRelatorio": 298,
+  "dataHora": "2025-05-11 08:03:11",
+  "latitude": -10.847222,
+  "longitude": -49.878238,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Crítica",
+  "qtdAtingidos": 41,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Bloqueado",
+  "notasAdicionais": "Moradores relatam alagamento em vias principais.",
+  "classificacaoRisco": "Atenção Urgente"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c496"
+  },
+  "idRelatorio": 299,
+  "dataHora": "2025-05-09 01:59:01",
+  "latitude": 1.248476,
+  "longitude": -67.843137,
+  "tipoFonte": "Equipe de Campo",
+  "tipoObservacao": "Alagamento",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 150,
+  "danoInfraestrutura": "Moderado",
+  "acessibilidade": "Fácil",
+  "notasAdicionais": "Região com nível de água acima da calçada.",
+  "classificacaoRisco": "Suporte Necessário"
+},
+{
+  "_id": {
+    "$oid": "6843758d14301ada21d6c497"
+  },
+  "idRelatorio": 300,
+  "dataHora": "2025-05-27 00:55:54",
+  "latitude": -22.218252,
+  "longitude": -46.422901,
+  "tipoFonte": "Drone",
+  "tipoObservacao": "Pessoas Isoladas",
+  "nivelGravidade": "Baixa",
+  "qtdAtingidos": 102,
+  "danoInfraestrutura": "Severo",
+  "acessibilidade": "Difícil",
+  "notasAdicionais": "Famílias ilhadas aguardam resgate.",
+  "classificacaoRisco": "Atenção Urgente"
+}]
