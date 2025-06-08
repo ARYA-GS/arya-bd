@@ -1,17 +1,12 @@
-# app.py
-
 import csv
 import io
 from flask import Flask, request, jsonify, render_template, Response
 from bson import ObjectId
 from bson.errors import InvalidId
-
-# Importa a função de conexão do nosso módulo db
 from db import get_mongo_connection
 
 app = Flask(__name__)
 
-# Dicionário para tradução dos campos, conforme solicitado.
 TRADUCOES = {
     'Nome atual': 'Nome mais bonito',
     'id_zona': 'id_zona',
@@ -40,13 +35,11 @@ def traduzir_campo(campo_tecnico):
     """Traduz um nome de campo técnico para um nome amigável."""
     return TRADUCOES.get(campo_tecnico, campo_tecnico)
 
-# Rota principal que renderiza o frontend
 @app.route('/')
 def index():
     """Renderiza a página HTML principal."""
     return render_template('index.html')
 
-# --- ROTAS DA API ---
 
 @app.route('/api/collections', methods=['GET'])
 def get_collections():
@@ -68,7 +61,7 @@ def get_all_docs(collection_name):
         collection = db[collection_name]
         
         docs = list(collection.find({}))
-        # Converte ObjectId para string para ser serializável em JSON
+
         for doc in docs:
             doc['_id'] = str(doc['_id'])
             
@@ -84,7 +77,6 @@ def create_doc(collection_name):
         collection = db[collection_name]
         data = request.json
         
-        # Remove o campo _id se ele foi enviado vazio no formulário
         if '_id' in data and not data['_id']:
             del data['_id']
 
@@ -101,7 +93,6 @@ def update_doc(collection_name, doc_id):
         collection = db[collection_name]
         data = request.json
         
-        # O _id não deve ser atualizado, então o removemos do payload
         if '_id' in data:
             del data['_id']
             
@@ -145,7 +136,6 @@ def export_data(collection_name):
         if not data:
             return jsonify({"erro": "Nenhum dado para exportar"}), 404
 
-        # Remove o ObjectId para a exportação
         for item in data:
             item['_id'] = str(item['_id'])
 
@@ -159,12 +149,10 @@ def export_data(collection_name):
             output = io.StringIO()
             writer = csv.writer(output)
             
-            # Escreve o cabeçalho (traduzido)
             headers = data[0].keys()
             translated_headers = [traduzir_campo(h) for h in headers]
             writer.writerow(translated_headers)
-            
-            # Escreve os dados
+        
             for row in data:
                 writer.writerow(row.values())
                 
