@@ -1,5 +1,3 @@
--- PROCEDURES: ARYA_USUARIO
-
 CREATE OR REPLACE PROCEDURE insert_arya_usuario (
     p_id_usuario     IN VARCHAR2,
     p_nome           IN VARCHAR2,
@@ -43,8 +41,6 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_usuario: ' || SQLERRM);
 END;
-
--- PROCEDURES: ARYA_ENDERECO
 
 CREATE OR REPLACE PROCEDURE insert_arya_endereco (
     p_id_endereco IN VARCHAR2,
@@ -96,7 +92,6 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_endereco: ' || SQLERRM);
 END;
 
--- PROCEDURES: ARYA_AREA_OPERACAO
 
 CREATE OR REPLACE PROCEDURE insert_arya_area_operacao (
     p_id_area_operacao IN VARCHAR2,
@@ -136,7 +131,6 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_area_operacao: ' || SQLERRM);
 END;
 
--- PROCEDURES: ARYA_HUB_OPERACIONAL
 
 CREATE OR REPLACE PROCEDURE insert_arya_hub_operacional (
     p_id_hub IN VARCHAR2,
@@ -186,7 +180,6 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_hub_operacional: ' || SQLERRM);
 END;
 
--- PROCEDURES: ARYA_DRONE
 
 CREATE OR REPLACE PROCEDURE insert_arya_drone (
     p_id_drone IN VARCHAR2,
@@ -248,7 +241,6 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_drone: ' || SQLERRM);
 END;
 
--- PROCEDURES: ARYA_OCORRENCIA
 
 CREATE OR REPLACE PROCEDURE insert_arya_ocorrencia (
     p_id_ocorrencia IN VARCHAR2,

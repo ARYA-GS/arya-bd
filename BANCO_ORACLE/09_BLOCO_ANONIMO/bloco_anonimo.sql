@@ -49,7 +49,7 @@ BEGIN
 
     DBMS_OUTPUT.PUT_LINE('Drones ativos: ' || v_total_ativos);
     IF v_total_em_voo = 0 THEN
-        DBMS_OUTPUT.PUT_LINE('⚠️ Nenhum drone em voo no momento!');
+        DBMS_OUTPUT.PUT_LINE('Nenhum drone em voo no momento!');
     ELSE
         DBMS_OUTPUT.PUT_LINE('Drones em voo: ' || v_total_em_voo);
     END IF;

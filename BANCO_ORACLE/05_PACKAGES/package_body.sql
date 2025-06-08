@@ -1,10 +1,5 @@
 CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
 
-    /******************************************************************************
-       PROCEDURES DE CRUD (INSERT, UPDATE, DELETE)
-    ******************************************************************************/
-
-    -- CRUD para ARYA_USUARIO
     PROCEDURE insert_arya_usuario (p_id_usuario IN VARCHAR2, p_nome IN VARCHAR2, p_email IN VARCHAR2, p_senha IN VARCHAR2, p_data_nasc IN DATE) AS
     BEGIN
         INSERT INTO ARYA_USUARIO (id_usuario, nome, email, senha, data_nasc) VALUES (p_id_usuario, p_nome, p_email, p_senha, p_data_nasc);
@@ -23,7 +18,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_usuario: ' || SQLERRM); RAISE;
     END delete_arya_usuario;
 
-    -- CRUD para ARYA_ENDERECO
     PROCEDURE insert_arya_endereco (p_id_endereco IN VARCHAR2, p_bairro IN VARCHAR2, p_cidade IN VARCHAR2, p_estado IN VARCHAR2, p_pais IN VARCHAR2, p_latitude IN NUMBER, p_longitude IN NUMBER) AS
     BEGIN
         INSERT INTO ARYA_ENDERECO (id_endereco, bairro, cidade, estado, pais, latitude, longitude) VALUES (p_id_endereco, p_bairro, p_cidade, p_estado, p_pais, p_latitude, p_longitude);
@@ -42,7 +36,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_endereco: ' || SQLERRM); RAISE;
     END delete_arya_endereco;
 
-    -- CRUD para ARYA_AREA_OPERACAO
     PROCEDURE insert_arya_area_operacao (p_id_area_operacao IN VARCHAR2, p_latitude_central IN NUMBER, p_longitude_central IN NUMBER) AS
     BEGIN
         INSERT INTO ARYA_AREA_OPERACAO (id_area_operacao, latitude_central, longitude_central) VALUES (p_id_area_operacao, p_latitude_central, p_longitude_central);
@@ -61,7 +54,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_area_operacao: ' || SQLERRM); RAISE;
     END delete_arya_area_operacao;
 
-    -- CRUD para ARYA_HUB_OPERACIONAL
     PROCEDURE insert_arya_hub_operacional (p_id_hub IN VARCHAR2, p_nome IN VARCHAR2, p_status IN VARCHAR2, p_id_endereco IN VARCHAR2) IS
     BEGIN
         INSERT INTO ARYA_HUB_OPERACIONAL (id_hub, nome, status, id_endereco) VALUES (p_id_hub, p_nome, p_status, p_id_endereco);
@@ -80,7 +72,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_hub_operacional: ' || SQLERRM); RAISE;
     END delete_arya_hub_operacional;
 
-    -- CRUD para ARYA_DRONE
     PROCEDURE insert_arya_drone (p_id_drone IN VARCHAR2, p_id_hub IN VARCHAR2, p_nome IN VARCHAR2, p_status IN VARCHAR2, p_modelo IN VARCHAR2, p_alcanceKM IN NUMBER, p_cargaKg IN NUMBER, p_carregamento IN VARCHAR2) IS
     BEGIN
         INSERT INTO ARYA_DRONE (id_drone, id_hub, nome, status, modelo, alcanceKM, cargaKg, carregamento) VALUES (p_id_drone, p_id_hub, p_nome, p_status, p_modelo, p_alcanceKM, p_cargaKg, p_carregamento);
@@ -99,7 +90,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_drone: ' || SQLERRM); RAISE;
     END delete_arya_drone;
 
-    -- CRUD para ARYA_OCORRENCIA
     PROCEDURE insert_arya_ocorrencia (p_id_ocorrencia IN VARCHAR2, p_tipo_ocorrencia IN VARCHAR2, p_nivel_severidade IN NUMBER, p_data_ocorrencia IN TIMESTAMP, p_descricao IN CLOB, p_id_usuario IN VARCHAR2, p_id_endereco IN VARCHAR2, p_id_area_operacao IN VARCHAR2) IS
     BEGIN
         INSERT INTO ARYA_OCORRENCIA (id_ocorrencia, tipo_ocorrencia, nivel_severidade, data_ocorrencia, descricao, id_usuario, id_endereco, id_area_operacao) VALUES (p_id_ocorrencia, p_tipo_ocorrencia, p_nivel_severidade, p_data_ocorrencia, p_descricao, p_id_usuario, p_id_endereco, p_id_area_operacao);
@@ -118,7 +108,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_ocorrencia: ' || SQLERRM); RAISE;
     END delete_arya_ocorrencia;
 
-    -- CRUD para ARYA_MISSAO_DRONE
     PROCEDURE insert_arya_missao_drone (p_id_missao IN VARCHAR2, p_id_drone IN VARCHAR2, p_id_ocorrencia IN VARCHAR2, p_dataInicio IN TIMESTAMP, p_dataFim IN TIMESTAMP, p_status IN VARCHAR2) IS
     BEGIN
         INSERT INTO ARYA_MISSAO_DRONE (id_missao, id_drone, id_ocorrencia, dataInicio, dataFim, status) VALUES (p_id_missao, p_id_drone, p_id_ocorrencia, p_dataInicio, p_dataFim, p_status);
@@ -137,9 +126,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em delete_arya_missao_drone: ' || SQLERRM); RAISE;
     END delete_arya_missao_drone;
     
-    /******************************************************************************
-       FUNCTIONS DE NEGÓCIO
-    ******************************************************************************/
     FUNCTION fnc_pontuacao_severidade (p_nivel_severidade IN NUMBER) RETURN VARCHAR2 IS
         v_pontuacao VARCHAR2(10);
     BEGIN
@@ -164,9 +150,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
         RETURN v_risco;
     END fnc_calcula_risco;
     
-    /******************************************************************************
-       PROCEDURES DE LÓGICA (ANTIGOS BLOCOS ANÔNIMOS E CURSORES)
-    ******************************************************************************/
+
     PROCEDURE prc_verificar_e_ativar_drone(p_id_drone IN ARYA_DRONE.id_drone%TYPE) IS
         v_status ARYA_DRONE.status%TYPE;
         v_hub_status ARYA_HUB_OPERACIONAL.status%TYPE;
@@ -259,9 +243,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE('Erro em prc_listar_hubs_sem_drones: ' || SQLERRM); RAISE;
     END prc_listar_hubs_sem_drones;
 
-    /******************************************************************************
-       FUNCTIONS DE RELATÓRIO (COM SYS_REFCURSOR)
-    ******************************************************************************/
     FUNCTION fnc_rel_contagem_drones_status RETURN SYS_REFCURSOR AS o_ref_cursor SYS_REFCURSOR;
     BEGIN OPEN o_ref_cursor FOR SELECT status, COUNT(*) AS total_drones FROM ARYA_DRONE GROUP BY status ORDER BY total_drones DESC; RETURN o_ref_cursor;
     EXCEPTION WHEN OTHERS THEN RAISE; END fnc_rel_contagem_drones_status;
@@ -282,9 +263,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_arya_management AS
     BEGIN OPEN o_ref_cursor FOR SELECT a.id_area_operacao, COUNT(o.id_ocorrencia) AS total_ocorrencias, AVG(o.nivel_severidade) AS severidade_media FROM ARYA_AREA_OPERACAO a LEFT JOIN ARYA_OCORRENCIA o ON a.id_area_operacao = o.id_area_operacao GROUP BY a.id_area_operacao ORDER BY severidade_media DESC; RETURN o_ref_cursor;
     EXCEPTION WHEN OTHERS THEN RAISE; END fnc_rel_ocorrencias_area_avg_sev;
 
-    /******************************************************************************
-       PROCEDURES DE VALIDAÇÃO (PARA SEREM CHAMADAS PELOS TRIGGERS)
-    ******************************************************************************/
+
     PROCEDURE prc_valida_usuario (p_email IN ARYA_USUARIO.email%TYPE, p_data_nasc IN ARYA_USUARIO.data_nasc%TYPE) IS
         v_email_pattern CONSTANT VARCHAR2(100) := '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$';
     BEGIN
