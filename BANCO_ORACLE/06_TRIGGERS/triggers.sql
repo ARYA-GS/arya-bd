@@ -1,90 +1,67 @@
-CREATE OR REPLACE TRIGGER arya_usuario_validacao
+-- Substituir todo o conteúdo do arquivo: 06_TRIGGERS/triggers.sql
+
+CREATE OR REPLACE TRIGGER trg_arya_usuario_validacao
 BEFORE INSERT OR UPDATE ON ARYA_USUARIO
 FOR EACH ROW
-DECLARE
-    v_email_pattern CONSTANT VARCHAR2(100) := '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$';
 BEGIN
-
-    IF NOT REGEXP_LIKE(:NEW.email, v_email_pattern) THEN
-        RAISE_APPLICATION_ERROR(-20001, 'Email inválido.');
-    END IF;
-
-    IF :NEW.data_nasc IS NOT NULL AND :NEW.data_nasc > SYSDATE THEN
-        RAISE_APPLICATION_ERROR(-20002, 'Data de nascimento não pode ser futura.');
-    END IF;
+    pkg_arya_management.prc_valida_usuario(
+        p_email     => :NEW.email,
+        p_data_nasc => :NEW.data_nasc
+    );
 END;
+/
 
-
-CREATE OR REPLACE TRIGGER arya_endereco_validacao
+CREATE OR REPLACE TRIGGER trg_arya_endereco_validacao
 BEFORE INSERT OR UPDATE ON ARYA_ENDERECO
 FOR EACH ROW
 BEGIN
-    IF :NEW.latitude IS NOT NULL AND (:NEW.latitude < -90 OR :NEW.latitude > 90) THEN
-        RAISE_APPLICATION_ERROR(-20006, 'Latitude inválida. Deve estar entre -90 e 90.');
-    END IF;
-    IF :NEW.longitude IS NOT NULL AND (:NEW.longitude < -180 OR :NEW.longitude > 180) THEN
-        RAISE_APPLICATION_ERROR(-20007, 'Longitude inválida. Deve estar entre -180 e 180.');
-    END IF;
+    pkg_arya_management.prc_valida_endereco(
+        p_latitude  => :NEW.latitude,
+        p_longitude => :NEW.longitude
+    );
 END;
+/
 
-CREATE OR REPLACE TRIGGER arya_area_operacao_validacao
+CREATE OR REPLACE TRIGGER trg_arya_area_operacao_validacao
 BEFORE INSERT OR UPDATE ON ARYA_AREA_OPERACAO
 FOR EACH ROW
 BEGIN
-    IF :NEW.latitude_central < -90 OR :NEW.latitude_central > 90 THEN
-        RAISE_APPLICATION_ERROR(-20008, 'Latitude central inválida. Deve estar entre -90 e 90.');
-    END IF;
-    IF :NEW.longitude_central < -180 OR :NEW.longitude_central > 180 THEN
-        RAISE_APPLICATION_ERROR(-20009, 'Longitude central inválida. Deve estar entre -180 e 180.');
-    END IF;
+    pkg_arya_management.prc_valida_area_operacao(
+        p_latitude_central  => :NEW.latitude_central,
+        p_longitude_central => :NEW.longitude_central
+    );
 END;
+/
 
-CREATE OR REPLACE TRIGGER arya_hub_operacional_validacao
+CREATE OR REPLACE TRIGGER trg_arya_hub_operacional_validacao
 BEFORE INSERT OR UPDATE ON ARYA_HUB_OPERACIONAL
 FOR EACH ROW
 BEGIN
-    IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('ativo', 'inativo', 'manutencao') THEN
-        RAISE_APPLICATION_ERROR(-20010, 'Status inválido para Hub Operacional.');
-    END IF;
+    pkg_arya_management.prc_valida_hub_operacional(p_status => :NEW.status);
 END;
+/
 
-CREATE OR REPLACE TRIGGER arya_drone_validacao
+CREATE OR REPLACE TRIGGER trg_arya_drone_validacao
 BEFORE INSERT OR UPDATE ON ARYA_DRONE
 FOR EACH ROW
 BEGIN
-
-    IF :NEW.nome IS NULL OR TRIM(:NEW.nome) = '' THEN
-        RAISE_APPLICATION_ERROR(-20011, 'Nome do drone é obrigatório.');
-    END IF;
-
-    IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('ativo', 'inativo', 'em voo', 'manutencao') THEN
-        RAISE_APPLICATION_ERROR(-20012, 'Status inválido para Drone.');
-    END IF;
-
-    IF :NEW.modelo IS NULL OR TRIM(:NEW.modelo) = '' THEN
-        RAISE_APPLICATION_ERROR(-20016, 'Modelo do drone é obrigatório.');
-    END IF;
-
-    IF :NEW.alcanceKM IS NULL OR :NEW.alcanceKM <= 0 THEN
-        RAISE_APPLICATION_ERROR(-20017, 'Alcance (KM) deve ser maior que zero.');
-    END IF;
-
-    IF :NEW.cargaKg IS NULL OR :NEW.cargaKg < 0 THEN
-        RAISE_APPLICATION_ERROR(-20018, 'Carga (Kg) não pode ser negativa.');
-    END IF;
+    pkg_arya_management.prc_valida_drone(
+        p_nome      => :NEW.nome,
+        p_status    => :NEW.status,
+        p_modelo    => :NEW.modelo,
+        p_alcanceKM => :NEW.alcanceKM,
+        p_cargaKg   => :NEW.cargaKg
+    );
 END;
+/
 
-CREATE OR REPLACE TRIGGER arya_missao_drone_validacao
+CREATE OR REPLACE TRIGGER trg_arya_missao_drone_validacao
 BEFORE INSERT OR UPDATE ON ARYA_MISSAO_DRONE
 FOR EACH ROW
-BEGI
-    IF :NEW.dataInicio IS NULL THEN
-        RAISE_APPLICATION_ERROR(-20019, 'Data de início da missão é obrigatória.');
-    END I
-    IF :NEW.dataFim IS NOT NULL AND :NEW.dataFim < :NEW.dataInicio THEN
-        RAISE_APPLICATION_ERROR(-20020, 'Data de fim da missão não pode ser anterior à data de início.');
-    END
-    IF :NEW.status IS NOT NULL AND LOWER(:NEW.status) NOT IN ('concluída', 'em andamento', 'cancelada') THEN
-     RAISE_APPLICATION_ERROR(-20021, 'Status inválido para Missão do drone.');
-END IF;
+BEGIN
+    pkg_arya_management.prc_valida_missao_drone(
+        p_dataInicio => :NEW.dataInicio,
+        p_dataFim    => :NEW.dataFim,
+        p_status     => :NEW.status
+    );
 END;

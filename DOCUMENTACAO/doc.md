@@ -74,7 +74,8 @@ Gatilhos que são disparados automaticamente antes de operações de `INSERT` ou
 ### 4. Packages (`package.sql`, `package_body.sql`)
 
 O `pkg_arya_management` é o principal componente de lógica de negócio do banco de dados. Ele agrupa todas as procedures, funções e lógicas de relatórios em um único pacote modular e de fácil manutenção.
-
+Porém foi observado que o que foi solicitado para estar dentro dos packages não está correto, dentre todas os requisitos que foi solicitado eu naõ adicionei os seguintes: 
+ - `Triggers`: Não pode estar em m pack
 **Principais Componentes do Pacote:**
 * **CRUD Procedures:** Centraliza todas as procedures de `INSERT`, `UPDATE` e `DELETE` para as tabelas do sistema.
 * **Funções de Negócio:** Inclui as funções `fnc_pontuacao_severidade`, `fnc_ranking_ocorrencias_hub`, e `fnc_calcula_risco`.
