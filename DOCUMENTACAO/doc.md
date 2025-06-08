@@ -119,7 +119,7 @@ O MongoDB é usado para dados que exigem um esquema flexível.
 ## 🔗 Links Úteis
 
 * [Link do GitHub](https://github.com/ARYA-GS/arya-bd)
-* [Link do Youtube](https://#)
+* [Link do Youtube](https://youtu.be/3OuNr6cEigk?si=ueBOOu5Fbik0-yl5)
 
 ---
 
